@@ -1,8 +1,8 @@
-/*---------- home.css for Portfolio Kakoui ----------*/
+/*---------- home.css for Portfolio Webnono----------*/
 
-/*-- Article "About" of Kakoui  --*/ 
+/*-- Article "About" of Webnono  --*/ 
 
-.article_kakoui_home {
+.article_webnono_home {
     position: absolute;
     top: 12.5%;
     left: 30%;
@@ -13,7 +13,7 @@
 
 /*TitleOfArticle*/
 
-#text1_kakoui_home {
+#text1_webnono_home {
     position: absolute;
     top: 25%;
     color: white;
@@ -24,7 +24,7 @@
     transition: 0.5s;
 }
 
-#text1_kakoui_home:hover {
+#text1_webnono_home:hover {
     color: grey;
     font-size: 240%;
     position: absolute;
@@ -35,7 +35,7 @@
 
 /*TextOfArticle*/
 
-#text2_kakoui_home {
+#text2_webnono_home {
     position: absolute;
     top: 40%;
     margin-left: 25%;
@@ -49,7 +49,7 @@
 
 /*Image*/
 
-#image1_kakoui_home {
+#image1_webnono_home {
     position: absolute;
     left: 3.5%;
     top: 35%;
@@ -57,7 +57,7 @@
 
 }
 
-#image1_kakoui_home:hover {
+#image1_webnono_home:hover {
     position: absolute;
     left: 3.75%;
     top: 36%;
