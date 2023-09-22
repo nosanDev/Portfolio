@@ -1,0 +1,72 @@
+/*---------- project.css for Portfolio Kakoui ----------*/
+
+/*-- Article Project  --*/
+
+.article_myprojects_project {
+    position: absolute;
+    top: 12.5%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75%;
+    width: 70%;
+    overflow: auto;
+}
+
+/*ProjectPresentation*/
+
+.project_grid_container {
+    display: table;
+}
+
+/*--*/
+
+.project_grid_item {
+    max-width: 28%;
+    max-height: 28%;
+    width: 28%;
+    height:  28%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+/*--*/
+
+#item_01:hover {
+    background-color: (168, 168, 168, 0.5);
+    transition: 1s;
+    content: "Test";
+}
+
+#item_02:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_03:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_04:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_05:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_06:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_07:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_08:hover {
+    background-color: (168, 168, 168, 0.5);
+}
+
+#item_09:hover {
+    background-color: (168, 168, 168, 0.5);
+}

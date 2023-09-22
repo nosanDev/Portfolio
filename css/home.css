@@ -1,0 +1,83 @@
+/*---------- home.css for Portfolio Kakoui ----------*/
+
+/*-- Article "About" of Kakoui  --*/ 
+
+.article_kakoui_home {
+    position: absolute;
+    top: 12.5%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75%;
+    width: 70%;
+}
+
+/*TitleOfArticle*/
+
+#text1_kakoui_home {
+    position: absolute;
+    top: 25%;
+    color: white;
+    text-decoration: none;
+    font-size: 250%;
+    margin-left: 24.5%;
+    font-weight: xx-large;
+    transition: 0.5s;
+}
+
+#text1_kakoui_home:hover {
+    color: grey;
+    font-size: 240%;
+    position: absolute;
+    top: 26%;
+    margin-left: 24.5%;
+    transition: 0.5s;
+}
+
+/*TextOfArticle*/
+
+#text2_kakoui_home {
+    position: absolute;
+    top: 40%;
+    margin-left: 25%;
+    color: white;
+    font-size: 110%;
+    width: 60%;
+    text-decoration: none;
+    font-weight: lighter;
+    line-height: 150%;
+}
+
+/*Image*/
+
+#image1_kakoui_home {
+    position: absolute;
+    left: 3.5%;
+    top: 35%;
+    transition: 0.5s;
+
+}
+
+#image1_kakoui_home:hover {
+    position: absolute;
+    left: 3.75%;
+    top: 36%;
+    height: 27%;
+    width: 17%;
+    transition: 0.5s;
+}
+
+/*BUTTON_READMORE*/
+
+#button_readmore_home {
+    position: absolute;
+    top: 57.5%;
+    left: 25%;
+}
+
+/*BUTTON_DISCORD*/
+
+#button_discord_home {
+    position: absolute;
+    top: 57.5%;
+    left: 35%;
+}

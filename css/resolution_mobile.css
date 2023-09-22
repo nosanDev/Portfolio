@@ -1,0 +1,115 @@
+/*---------- resolution_mobile.css for Portfolio Kakoui ----------*/
+
+/*-- 1024px under --*/
+
+@media (max-width: 1280px) {
+    
+    /*style*/
+    nav {
+        position: absolute;
+        left: 1%;
+        height: 2%;
+        width: 2%;
+    }
+
+    .btn-black-type {
+        height: 7%;
+        width: 11%;
+    }
+    
+    .btn-white-type {
+        height: 7%;
+        width: 11%;
+    }
+
+
+
+    #title_port {
+        position: absolute;
+        left: 21.1%;
+        font-size: x-large;
+    }
+
+    #title_folio {
+        position: absolute;
+        left: 44%;
+        font-size: x-large;
+    }
+
+    /*home*/
+
+    #button_readmore_home {
+        position: absolute;
+        top: 70%;   
+    }
+
+    #button_discord_home {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+    }
+
+    /*about*/
+
+    #title_aboutme_about {
+        position: absolute;
+        top: -5%;
+    }
+
+    #text_aboutme_about {
+        position: absolute;
+        top: 12.5%;
+        font-size: 75%;
+    }
+
+    #button_aboutme_about {
+        position: absolute;
+        top: 90%;
+        height: 7%;
+        width: 11%;
+        font-size: 70%;
+    }
+
+    /*project*/
+
+    /*contact*/
+
+    #map_contactme_contact {
+        position: absolute;
+        top: 21%;
+        height: 57%;
+    }
+
+    #name_contactme_contact {
+        position: absolute;
+        top: 21%;
+    }
+
+    #email_contactme_contact {
+        position: absolute;
+        top: 31%;
+    }
+
+
+    #subject_contactme_contact {
+        position: absolute;
+        top: 41%;
+    }
+
+    #message_contactme_contact {
+        position: absolute;
+        top: 51%;
+    }
+
+    #checkbox_contactme_contact {
+        position: absolute;
+        top: 61%;
+    }
+
+    #button_contactme_contact {
+        position: absolute;
+        top: 71%;
+    }
+
+        
+}
