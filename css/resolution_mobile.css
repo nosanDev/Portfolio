@@ -113,3 +113,45 @@
 
         
 }
+
+/*-- 767px under --*/
+
+@media (max-width: 767px) {
+
+
+
+    .article_webnono_home {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #text1_webnono_home {
+        font-size: 150%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #text2_webnono_home {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #image1_webnono_home {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    #button_readmore_home {
+        left: 0;
+        width: 100%;
+    }
+
+    #button_discord_home {
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
