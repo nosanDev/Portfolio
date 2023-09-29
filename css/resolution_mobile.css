@@ -308,8 +308,10 @@
 
     nav #image_project_nav_white {
         position: absolute;
-        top: 0%;
-        left: 0%;
+        height: 20%;
+        width: 60%;
+        top: -110%;
+        left: 450%;
     }
 
     /*----*/
@@ -359,8 +361,10 @@
 
     nav #image_contact_nav_white {
         position: absolute;
-        top: 0%;
-        left: 0%;
+        height: 20%;
+        width: 60%;
+        top: -250%;
+        left: 800%;
     }
 
     /*----*/
@@ -380,6 +384,139 @@
 
     /*----------------------------------------*/
 
+
+    /*-- Article "About" of Webnono  --*/ 
+
+    .article_webnono_home {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 50%;
+        width: 85%;
+    }
+
+    #text1_webnono_home {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        color: white;
+        text-decoration: none;
+        font-size: 200%;
+        margin-left: 24.5%;
+        font-weight: xx-large;
+        transition: 0.5s;
+    }
     
 
+    #text1_webnono_home:hover {
+        color: grey;
+        font-size: 240%;
+        position: absolute;
+        top: 26%;
+        margin-left: 24.5%;
+        transition: 0.5s;
+    }
+
+        /*TextOfArticle*/
+
+    #text2_webnono_home {
+        position: absolute;
+        top: 22.5%;
+        margin-left: 25%;
+        color: white;
+        font-size: 95%;
+        width: 60%;
+        text-decoration: none;
+        font-weight: lighter;
+        line-height: 150%;
+        overflow: auto;
+    }
+
+        /*Image*/
+
+    #image1_webnono_home {
+        position: absolute;
+        left: 3.5%;
+        top: 5%;
+        height: 20%;
+        width: 30%;
+        transition: 0.5s;
+
+    }
+
+    #image1_webnono_home:hover {
+        position: absolute;
+        left: 3.75%;
+        top: 36%;
+        height: 27%;
+        width: 17%;
+        transition: 0.5s;
+    }
+
+    /*BUTTON_READMORE*/
+
+    #button_readmore_home {
+        position: absolute;
+        top: 85%;
+        left: 25%;
+    }
+
+    /*BUTTON_DISCORD*/
+
+    #button_discord_home {
+        position: absolute;
+        top: 85%;
+        left: 55%;
+    }
+
+    /*-- Button Black Type --*/
+
+    .btn-black-type {
+        text-decoration: none;
+        border: 2px white solid;
+        color: white;
+        background: rgba(0,0,0,0.5);
+        height: 7.5%;
+        width: 22.5%;
+        font-size: 65%;
+        transition: 0.5s;
+    }
+
+    .btn-black-type:hover {
+        border: 2px white solid;
+        color: rgba(0,0,0,0.5);
+        background: white;
+        transition: 0.5s;
+    }
+
+    /* Button White Type */
+
+    .btn-white-type {
+        text-decoration: none;
+        border: 2px white solid;
+        color: rgba(0,0,0,0.5);
+        background: white;
+        height: 7.5%;
+        width: 22.5%;
+        font-size: 65%;
+        transition: 0.5s;
+    }
+
+    .btn-white-type:hover {
+        border: 2px white solid;
+        color: white;
+        background: rgba(0,0,0,0.5);
+        transition: 0.5s;
+    }
+
+    #copyright_footer {
+        font-size: 75%;
+        position: absolute;
+        bottom: 10%;
+        left: -125%;
+        height: 15%;
+        width: 250%;
+    }
 }
+
