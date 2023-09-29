@@ -118,40 +118,21 @@
 
 @media (max-width: 767px) {
 
-
-
-    .article_webnono_home {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
+    nav {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        text-decoration: none;
     }
 
-    #text1_webnono_home {
-        font-size: 150%;
-        margin-left: 0;
-        text-align: center;
+    header {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin: 0%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 50%;
+        width: 50%;
     }
 
-    #text2_webnono_home {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #image1_webnono_home {
-        position: static;
-        width: 100%;
-        margin: 0;
-    }
-
-    #button_readmore_home {
-        left: 0;
-        width: 100%;
-    }
-
-    #button_discord_home {
-        left: 0;
-        width: 100%;
-        margin-top: 10px;
-    }
 }
