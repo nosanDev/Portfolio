@@ -267,7 +267,7 @@
     nav #text_about_nav {
         position: absolute;
         top: 10%;
-        left: 35%;
+        left: 35%; 
         text-decoration: none; 
         color: white;
         visibility: hidden;
