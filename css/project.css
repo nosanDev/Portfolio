@@ -29,6 +29,21 @@
     margin-right: 2%;
     margin-bottom: 1%;
     margin-top: 2%;
+    border-radius: 25px;
+    transition: 0.75s;
+}
+
+.project_grid_item:hover {
+    max-width: 28.5%;
+    max-height: 28.5%;
+    width: 28.5%;
+    height:  28.5%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    border-radius: 25px;
+    transition: 0.75s;
 }
 
 /*--*/

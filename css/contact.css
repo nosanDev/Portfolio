@@ -35,7 +35,7 @@
 
 /*Name*/
 
-#name_contactme_contact {
+#fullName {
     position: absolute;
     top: 15%;
     left: 55%;
@@ -43,7 +43,7 @@
 
 /*Email*/
 
-#email_contactme_contact {
+#email_id {
     position: absolute;
     top: 25%;
     left: 55%;
@@ -51,7 +51,7 @@
 
 /*Subject*/
 
-#subject_contactme_contact {
+#subject {
     position: absolute;
     top: 35%;
     left: 55%;
@@ -59,7 +59,7 @@
 
 /*Message*/
 
-#message_contactme_contact {
+#message {
     position: absolute;
     top: 45%;
     left: 55%;
@@ -80,4 +80,12 @@
     top: 65%;
     left: 55%;
     
+}
+
+#button_contactme_contact:active {
+    position: absolute;
+    top: 64%;
+    left: 54.5%;
+    height: 7%;
+    width: 9%;
 }
