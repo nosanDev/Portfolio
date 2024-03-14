@@ -1,1 +1,2 @@
-v0.2
+
+Repartir : Projet perso et projet client
