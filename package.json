@@ -34,18 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webnono8/Portfolio.git#main"
-  },
-  "author": "webnono",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/webnono8/Portfolio/issues"
-  },
-  "homepage": "https://github.com/webnono8/Portfolio/tree/main#readme"
+  }
 }
