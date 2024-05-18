@@ -6,8 +6,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -40,12 +40,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webnono8/Portfolio.git"
+    "url": "git+https://github.com/webnono8/Portfolio.git#main"
   },
   "author": "webnono",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/webnono8/Portfolio/issues"
   },
-  "homepage": "https://github.com/webnono8/Portfolio#readme"
+  "homepage": "https://github.com/webnono8/Portfolio/tree/main#readme"
 }
