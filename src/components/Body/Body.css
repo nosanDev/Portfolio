@@ -4,3 +4,66 @@ body, html {
     height: 100%;
 }
 
+
+/* AboutMe */
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 80vh;
+}
+
+#title{
+    padding: 50px;
+    color: black;
+}
+
+#title h1 {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.photo{
+    max-width: 50%;
+}
+
+#text{
+    color: black;
+    text-align: left;
+    width: 30%;
+}
+
+#text h5 {
+    font-size: 1em
+}
+
+/* PATH */
+
+.path{
+    width: 100%;
+    height: 35vh;
+}
+
+.background-path{
+    background-image: url("/public/assets/coding.png");
+    filter: blur(4px) grayscale(100%);
+}
+
+/* SKILLS */
+
+.skills{
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}

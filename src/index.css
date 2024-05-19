@@ -17,6 +17,25 @@ code {
     monospace;
 }
 
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #565656;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
 /* FONT */
 
 .inter {

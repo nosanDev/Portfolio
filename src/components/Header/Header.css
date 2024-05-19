@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+
 }
 
 header {
@@ -19,10 +19,10 @@ header {
 
 .background {
   position: absolute;
-  top: -1%;
-  left: -1%;
-  width: 102%;
-  height: 102%;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
   background-image: url('/public/assets/background.png');
   background-size: cover;
   background-position: center;
@@ -37,9 +37,8 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+  gap: 80px;
 }
 
 .title-bar {
@@ -47,7 +46,20 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  padding: 25px;
+  gap: 400px;
+}
+
+.image{
+  flex: 1;
+}
+
+.image img{
+  max-width: 11%;
+}
+
+nav{
+  flex: 1;
 }
 
 nav ul {
@@ -66,10 +78,12 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.2em;
+  transition: ease-in-out 1s;
 }
 
 nav ul li a:hover {
   color: rgb(29, 29, 29);
+  transition:  ease-in-out 1s;
 }
 
 img {
@@ -79,4 +93,54 @@ img {
 select {
   font-size: 1.2em;
   margin-left: 20px;
+}
+
+.dropdown-toggle {
+  color: white;
+  transition:  ease-in-out 1s
+}
+
+.dropdown-toggle:hover {
+  color: rgb(29, 29, 29);
+  transition:  ease-in-out 1s
+}
+
+.dropdown-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.flag{
+  color: white;
+  transition:  ease-in-out 1s
+}
+
+.flag:hover {
+  color: rgb(29, 29, 29);
+  transition:  ease-in-out 1s
+}
+
+.flag::after {
+  border-width: 0;
+}
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title h1{
+  font-size: 3.5em;
+}
+
+.arrow{
+  width: 30%;
 }

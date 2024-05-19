@@ -2,7 +2,6 @@
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import './Header.css';
-import LanguageSelector from '../Tools/LanguageSelector/LanguageSelector';
 
 const Header = () => {
   return (
@@ -10,36 +9,46 @@ const Header = () => {
       <div className="background"></div>
       <div className="content">
         <div className="title-bar">
-          <div>
+          <div className='image'>
             <img src="/assets/pp.png" alt="logo_webnono" />
           </div>
-          <nav>
+          <nav className='navbar'>
             <ul className="inter">
               <li><a href="/">Accueil</a></li>
               <li><a href="/aboutme">Qui suis-je ?</a></li>
               <li><a href="/skills">Compétences</a></li>
               <li><a href="/projects">Projets</a></li>
               <li><a href="/contacts">Contacts</a></li>
+              <Dropdown>
+              <Dropdown.Toggle variant="first" id="dropdown-basic">
+                <span className="flag">FR</span>
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/fr">FR</Dropdown.Item>
+                <Dropdown.Item href="#/en">EN</Dropdown.Item>
+                <Dropdown.Item href="#/es">ES</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
             </ul>
-            <LanguageSelector onLanguageChange={onLanguageChange} />
+            
           </nav>
         </div>
         <div>
-          <div>
-            <img src="/assets/social/instagram.png" alt="Instagram" />
-            <img src="/assets/social/linkedin.png" alt="LinkedIn" />
-            <img src="/assets/social/twitter.png" alt="Twitter" />
+          <div className='networks'>
+            <img src="/assets/social_networks.svg" alt="Instagram" />
+            <img src="/assets/linkedin.png" alt="LinkedIn" />
+            <img src="/assets/twitter.png" alt="Twitter" />
           </div>
-          <div>
+          <div className='title'>
             <div>
-              <h1>Webnono</h1>
+              <h1 className='inika-bold'>Webnono</h1>
             </div>
             <div>
-              <h2>Développeur - Étudiant</h2>
+              <h2 className='inria-serif-light'>Développeur - Étudiant</h2>
             </div>
           </div>
           <div>
-            <img src="/assets/bot-arrow.png" alt="bot-arrow" />
+            <img className='arrow' src="/assets/bot_arrow.svg" alt="bot-arrow" />
           </div>
         </div>
       </div>
