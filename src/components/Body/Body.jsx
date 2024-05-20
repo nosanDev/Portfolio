@@ -15,7 +15,7 @@ const Body  = () => {
                     </div>
                     <div className='container'>
                         <div className='photo'>
-                            <img alt='me'></img>
+                            <img src='/assets/me.png' alt='me'></img>
                         </div>
                         <div id='text' className='inika-regular'>
                             <h5>Hey !</h5> 
@@ -33,8 +33,9 @@ const Body  = () => {
                 {/* -- PATH -- */}
 
                 <div className='path'>
-                    <div className="background-path"></div>
-
+                    <div>
+                        <h1 className='inika-bold'>Mon Chemin</h1>
+                    </div>
                 </div>
 
                 {/* -- SKILLS -- */}
@@ -42,6 +43,12 @@ const Body  = () => {
                 <div className='skills'>
 
                 </div>
+
+                {/* -- Project & Command -- */}
+
+                {/* -- CV -- */}
+
+                {/* -- Contacts */}
 
             </div>
         </body>

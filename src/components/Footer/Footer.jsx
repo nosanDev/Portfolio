@@ -1,11 +1,17 @@
 // src/components/Footer/Footer.jsx
-import React from "react";
-import "./Footer.css"
+import "./Footer.css";
 
 const Footer = () => {
-    return {
-        
-    }
-}
+    return (
+        <footer>
+            <div className="copyright">
+                <h3>© Copyright 2024 - webnono. Tous droits réservés.</h3>
+            </div>
+            <div className="plan-footer">
+                <h2><a href="/">Plan du site</a> | <a href="/">Mentions légales</a> | <a href="/">Politique de confidentialité</a></h2>
+            </div>
+        </footer>
+    )
+};
 
-export default Footer();
+export default Footer;
