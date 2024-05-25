@@ -44,11 +44,36 @@ const Body  = () => {
 
                 </div>
 
-                {/* -- Project & Command -- */}
+                {/* -- PROJECTS & COMMANDS -- */}
+
+                <div className='projects'>
+                    <div>
+                        <h1 className='inika-bold'>Projets & Commandes</h1>
+                    </div>
+                    <div>
+                        <h3 className='inria-sans-bold-italic'>Présentation de mes dernières expériences</h3>
+                    </div>
+                </div>
 
                 {/* -- CV -- */}
 
-                {/* -- Contacts */}
+                <div className='cv'>
+                    <div>
+                        <h1 className='inika-bold'>Consultez mon Curriculum Vitae en ligne</h1>
+                    </div>
+                    <div>
+                        <button className='btn-cv'><a href='/'>CLIQUEZ ICI</a></button>
+                    </div>
+                </div>
+
+                {/* -- CONTACTS -- */}
+
+                <div>
+                    <div>
+                        <h1>Contacts</h1>
+                        <h3>Je vous attends, n'hésitez pas à me contacter</h3>
+                    </div>
+                </div>
 
             </div>
         </body>

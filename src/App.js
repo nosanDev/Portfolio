@@ -7,6 +7,7 @@ import Skills from './pages/Skills/Skills';
 import Projects from './pages/Projects/Projects';
 import Contacts from './pages/Contacts/Contacts'; 
 import NotFound from './pages/NotFound/NotFound';
+import MentionsLegals from './pages/MentionsLegals/MentionsLegals';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/skills" element={<Skills/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/contacts" element={<Contacts/>} />
+        <Route path="/mentionslegals" element={<MentionsLegals/>} />
         <Route path="*" element={<NotFound/>} /> {/* Route 404 */}
 
         {/* Manque les mentions légals et politiques de confidentialité */}
