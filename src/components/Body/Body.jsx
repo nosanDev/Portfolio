@@ -1,8 +1,13 @@
 // src/components/Body/Body.jsx
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import './Body.css';
 
 const Body  = () => {
+    const image1 = process.env.PUBLIC_URL + '/assets/game.png';
+    const image2 = process.env.PUBLIC_URL + '/assets/game.png';
+    const image3 = process.env.PUBLIC_URL + '/assets/game.png';
+
     return (
         <body>
             <div className='content'>
@@ -53,6 +58,43 @@ const Body  = () => {
                     <div>
                         <h3 className='inria-sans-bold-italic'>Présentation de mes dernières expériences</h3>
                     </div>
+                    <div className="carousel-container">
+                        <Carousel data-bs-theme="dark">
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image1}
+                                alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image2}
+                                alt="Second slide"
+                                />
+                                <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image3}
+                                alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>
                 </div>
 
                 {/* -- CV -- */}
@@ -62,7 +104,7 @@ const Body  = () => {
                         <h1 className='inika-bold'>Consultez mon Curriculum Vitae en ligne</h1>
                     </div>
                     <div>
-                        <button className='btn-cv'><a href='/'>CLIQUEZ ICI</a></button>
+                        <button className='btn-cv'><a href='/assets/CV.pdf' download={"/assets/CV.pdf"}>CLIQUEZ ICI</a></button>
                     </div>
                 </div>
 

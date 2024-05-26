@@ -100,11 +100,6 @@ select {
   transition:  ease-in-out 1s
 }
 
-.dropdown-toggle:hover {
-  color: rgb(29, 29, 29);
-  transition:  ease-in-out 1s
-}
-
 .dropdown-toggle:focus {
   outline: none;
   box-shadow: none;
@@ -113,11 +108,6 @@ select {
 
 .flag{
   color: white;
-  transition:  ease-in-out 1s
-}
-
-.flag:hover {
-  color: rgb(29, 29, 29);
   transition:  ease-in-out 1s
 }
 
