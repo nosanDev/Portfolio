@@ -10,7 +10,7 @@ const Body  = () => {
 
     return (
         <body>
-            <div className='content'>
+            <div className='contents'>
 
                 {/* -- ABOUTME -- */}
 
@@ -46,19 +46,40 @@ const Body  = () => {
                 {/* -- SKILLS -- */}
 
                 <div className='skills'>
-
+                    <div>
+                        <div id="title">
+                            <h1 className='inika-bold'>Compétences</h1>
+                        </div>
+                        <div id='subtitle'>
+                            <h3 className='inria-sans-regular-italic'>Voici l’expérience acquise ces dernières années</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <h2>Langages</h2>
+                            </div>
+                            <div>
+                                {/* Mettre les éléments */}
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* -- PROJECTS & COMMANDS -- */}
 
                 <div className='projects'>
-                    <div>
+                    <div id='title'>
                         <h1 className='inika-bold'>Projets & Commandes</h1>
                     </div>
-                    <div>
-                        <h3 className='inria-sans-bold-italic'>Présentation de mes dernières expériences</h3>
+                    <div id='subtitle'>
+                        <h3 className='inria-sans-regular-italic'>Présentation de mes dernières expériences</h3>
                     </div>
                     <div className="carousel-container">
+
+
+
+
                         <Carousel data-bs-theme="dark">
                             <Carousel.Item>
                                 <img
@@ -67,8 +88,8 @@ const Body  = () => {
                                 alt="First slide"
                                 />
                                 <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3></h3>
+                                <p></p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -78,8 +99,8 @@ const Body  = () => {
                                 alt="Second slide"
                                 />
                                 <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3></h3>
+                                <p></p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -89,8 +110,46 @@ const Body  = () => {
                                 alt="Third slide"
                                 />
                                 <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h3></h3>
+                                <p></p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+
+                        {/* CAROUSEL PROJECTS */}
+
+                        <Carousel data-bs-theme="dark">
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image1}
+                                alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                <h3></h3>
+                                <p></p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image2}
+                                alt="Second slide"
+                                />
+                                <Carousel.Caption>
+                                <h3></h3>
+                                <p></p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block carousel-img"
+                                src={image3}
+                                alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                <h3></h3>
+                                <p></p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -112,8 +171,12 @@ const Body  = () => {
 
                 <div>
                     <div>
-                        <h1>Contacts</h1>
-                        <h3>Je vous attends, n'hésitez pas à me contacter</h3>
+                        <div id='title'>
+                            <h1 className='inika-bold'>Contacts</h1>
+                        </div>
+                        <div id='subtitle'>
+                            <h3 className='inria-sans-regular-italic'>Je vous attends, n'hésitez pas à me contacter</h3>
+                        </div>
                     </div>
                 </div>
 

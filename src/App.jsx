@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
+import Plan from './pages/Plan/Plan';
 import MentionsLegals from './pages/MentionsLegals/MentionsLegals';
 import PolitiqueConf from './pages/PolitiqueConf/PolitiqueConf';
 import Loading from './components/Loading/Loading';
@@ -29,7 +30,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/mentionslegals" element={<MentionsLegals/>} />
+          <Route path='/plan' element={<Plan/>} />
+          <Route path="/mentionslegales" element={<MentionsLegals/>} />
           <Route path="/politiqueconf" element={<PolitiqueConf/>} />
           <Route path="*" element={<NotFound/>} /> {/* Route 404 */}
           
