@@ -34,8 +34,6 @@ function App() {
           <Route path="/mentionslegales" element={<MentionsLegals/>} />
           <Route path="/politiqueconf" element={<PolitiqueConf/>} />
           <Route path="*" element={<NotFound/>} /> {/* Route 404 */}
-          
-
         </Routes>
       </Router>
     </div>

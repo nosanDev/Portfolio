@@ -1,6 +1,6 @@
 // src/components/Body/Body.jsx
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, ProgressBar } from 'react-bootstrap';
 import './Body.css';
 
 const Body  = () => {
@@ -54,13 +54,89 @@ const Body  = () => {
                             <h3 className='inria-sans-regular-italic'>Voici l’expérience acquise ces dernières années</h3>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div>
-                                <h2>Langages</h2>
+                    <div className='skills-container'>
+                        <div className='skills-columns'>
+                            <div id='title-skills'>
+                                <h2 className='inika-regular'>Langages</h2>
                             </div>
-                            <div>
-                                {/* Mettre les éléments */}
+                            <div id='items-skills'>
+                                <img src='/assets/logos/html.png' alt='html'></img>
+                                <ProgressBar now={80} id='progress-bar'/>
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/css.png' alt='css'></img>
+                                <ProgressBar now={50} id='progress-bar'/>
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/python.png' alt='python'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/java.png' alt='java'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/php.png' alt='php'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/js.png' alt='js'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                        </div>
+                        <div className='skills-columns'>
+                            <div id='title-skills'>
+                                <h2 className='inika-regular'>Outils</h2>
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/windows.png' alt='windows'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/linux.png' alt='linux'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                        </div>
+                        <div className='skills-columns'>
+                            <div id='title-skills'>
+                                <h2 className='inika-regular'>Complémentaire</h2>
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/node-js.png' alt='node-js'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/react.png' alt='react'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/mongo.png' alt='mongo'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/boostrap.png' alt='boostrap'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/git.png' alt='git'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                        </div>
+                        <div className='skills-columns'>
+                            <div id='title-skills'>
+                                <h2 className='inika-regular'>Langue</h2>
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/uk.png' alt='uk'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/sp.png' alt='sp'></img>
+                                <ProgressBar now={60} id='progress-bar' />
+                            </div>
+                            <div id='items-skills'>
+                                <img src='/assets/logos/fr.png' alt='fr'></img>
+                                <ProgressBar now={60} id='progress-bar' />
                             </div>
                         </div>
                     </div>
@@ -169,7 +245,7 @@ const Body  = () => {
 
                 {/* -- CONTACTS -- */}
 
-                <div>
+                <div className='contacts'>
                     <div>
                         <div id='title'>
                             <h1 className='inika-bold'>Contacts</h1>

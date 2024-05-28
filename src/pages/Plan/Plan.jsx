@@ -15,7 +15,7 @@ const Plan = () => {
         </div>
         <div>
             <ul className='plan-ul'>
-                <li><h2 id='list' className='inria-sans-regular'><a href='/home'>webnono - Home</a></h2></li>
+                <li><h2 id='list' className='inria-sans-regular'><a href='/'>webnono - Home</a></h2></li>
                 <li><h2 id='list' className='inria-sans-regular'><a href='/mentionslegales'>Mentions Légales</a></h2></li>
                 <li><h2 id='list' className='inria-sans-regular'><a href='/politiqueconf'>Politiques de Confidentialités</a></h2></li>
                 <li><h2 id='list' className='inria-sans-regular'><a href='/plan'>Plan du Site</a></h2></li>

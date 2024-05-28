@@ -19,10 +19,10 @@ header {
 
 .background {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
+  top: -1%;
+  left: -1%;
+  width: 102%;
+  height: 102%;
   background-image: url('/public/assets/background.png');
   background-size: cover;
   background-position: center;
@@ -56,6 +56,12 @@ header {
 
 .image img{
   max-width: 11%;
+  transition: 2s ease-in;
+}
+
+.image img:hover{
+  transition: 1s ease-in;
+  animation: rotateY 1s ease-in-out;
 }
 
 nav{
@@ -121,6 +127,16 @@ select {
   gap: 30px;
 }
 
+#network {
+  transition: 1s;
+  max-width: 4%;
+  margin-left: 40px;
+}
+
+#network:hover {
+  animation: rotate 1.5s ease-in-out;
+}
+
 .title{
   display: flex;
   flex-direction: column;
@@ -129,8 +145,29 @@ select {
 
 .title h1{
   font-size: 3.5em;
+  transition: 1s ease-in-out;
+}
+
+.title h1:hover{
+  color: black;
+  transition: 1s ease-in-out;
+}
+
+.title h2{
+  transition: 1s ease-in-out;
+}
+
+.title h2:hover{
+  transition: 1s ease-in-out;
+  color: gray;
 }
 
 .arrow{
-  width: 30%;
+  margin-top: 40px;
+  min-width: 20vh;
+  min-height: 10vh;
+  max-width: 20vh;
+  max-height: 10vh;
+  cursor: pointer;
+  animation: bounce ease-in-out 4s infinite;
 }
