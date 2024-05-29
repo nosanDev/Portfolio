@@ -121,10 +121,22 @@ select {
   border-width: 0;
 }
 
+.header-element{
+  display: flex;
+  flex-direction: row;
+  padding-top: 150px;
+}
+
 .networks {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 30%;
+  margin-bottom: -80px;
+}
+
+.networks img{
+  min-width: 12%;
 }
 
 #network {
@@ -141,6 +153,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 41%;
 }
 
 .title h1{
@@ -163,7 +176,6 @@ select {
 }
 
 .arrow{
-  margin-top: 40px;
   min-width: 20vh;
   min-height: 10vh;
   max-width: 20vh;

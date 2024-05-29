@@ -101,10 +101,21 @@ body, html {
     background-image: url("/public/assets/coding.png");
     background-size: cover;
     background-position: center;
-    filter: blur(4px) grayscale(100%);
+    filter: blur(4px) grayscale(90%);
     z-index: -1; 
 }
 
+#timeline-path{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#timeline-path img{
+  min-width: 75%;
+}
 
 /* SKILLS */
 

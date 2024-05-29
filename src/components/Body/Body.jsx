@@ -41,6 +41,9 @@ const Body  = () => {
                     <div>
                         <h1 className='inika-bold'>Mon Chemin</h1>
                     </div>
+                    <div id='timeline-path'>
+                        <img src='/assets/timeline.png' alt='timeline'></img>
+                    </div>
                 </div>
 
                 {/* -- SKILLS -- */}

@@ -57,7 +57,7 @@ const Header = () => {
             
           </nav>
         </div>
-        <div>
+        <div className='header-element'>
           <div className='networks'>
             <img id='network' src="/assets/instagram.png" alt="Instagram" />
             <img id='network' src="/assets/linkedin.png" alt="Linkedin" />
@@ -71,10 +71,10 @@ const Header = () => {
               <h2 className='inria-serif-light'>Développeur - Étudiant</h2>
             </div>
           </div>
-          <div>
-          <img className='arrow' src="/assets/bot_arrow.png" alt="bot-arrow" onClick={handleClickAboutMe}/>
           </div>
-        </div>
+          <div>
+            <img className='arrow' src="/assets/bot_arrow.png" alt="bot-arrow" onClick={handleClickAboutMe}/>
+          </div>
       </div>
     </header>
   );
