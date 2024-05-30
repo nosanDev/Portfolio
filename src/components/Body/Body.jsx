@@ -1,6 +1,6 @@
 // src/components/Body/Body.jsx
 import React from 'react';
-import { Carousel, ProgressBar } from 'react-bootstrap';
+import { Carousel, ProgressBar, Form } from 'react-bootstrap';
 import './Body.css';
 
 const Body  = () => {
@@ -253,8 +253,66 @@ const Body  = () => {
                         <div id='title'>
                             <h1 className='inika-bold'>Contacts</h1>
                         </div>
+                        <div className='bar-contacts'><span></span></div>
                         <div id='subtitle'>
                             <h3 className='inria-sans-regular-italic'>Je vous attends, n'hésitez pas à me contacter</h3>
+                        </div>
+                    </div>
+                    {/* 2,3 note pour se retrouver. */}
+                    <div className='contacts-container'> 
+                        {/* La partie de gauche */}
+                        <div className='left-contacts'>
+                            <div>
+                                <div id='fl-contacts'>
+                                    <img src='/assets/user.png' alt='user'></img>
+                                    <h2 id='title-contacts' className='inria-sans-regular'>Nom et prénom</h2>
+                                </div>
+                                <div>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" placeholder="Nom et Prénom*" />
+                                    </Form.Group>
+                                </div>
+                                <div>
+                                    <h6 id='tl-contacts' className='roboto-regular'>Veuillez renseignez ce champs*</h6>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div id='fl-contacts'>
+                                    <img src='/assets/email.png' alt='email'></img>
+                                    <h2 id='title-contacts' className='inria-sans-regular'>Email</h2>
+                                </div>
+                                <div>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" placeholder="Saisissez votre email*" />
+                                    </Form.Group>
+                                </div>
+                                <div>
+                                <h6 id='tl-contacts' className='roboto-regular'>Veuillez renseignez ce champs*</h6>
+                            </div>
+                            <div className='bar-contacts2'><span></span></div>
+                            </div>
+                        </div>
+                        {/* La partie de droite */}
+                        <div>
+                            <div>
+                                <div id='fl-contacts'>
+                                    <img src='/assets/message.png' alt='message'></img>
+                                    <h2 id='title-contacts' className='inria-sans-regular'>Message</h2>
+                                </div>
+                                <div>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label>Example textarea</Form.Label>
+                                        <Form.Control as="textarea" rows={4} placeholder="Saisissez votre message*" />
+                                    </Form.Group>
+                                </div>
+                                <div>
+                                    <h6 id='tl-contacts' className='roboto-regular'>Veuillez renseignez ce champs*</h6>
+                                </div>
+                                <div className='bar-contacts2'><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>

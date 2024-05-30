@@ -303,4 +303,69 @@ body, html {
 .contacts{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 110vh;
 }
+
+.contacts-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+}
+
+.left-contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.bar-contacts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-contacts span {
+  width: 30%;
+  margin-bottom: 30px;
+  height: 30px;
+  border-top: 5px solid black;
+}
+
+.bar-contacts2{
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}
+
+.bar-contacts2 span {
+  width: 30%;
+  margin-top: 20px;
+  height: 30px;
+  border-top: 5px solid black;
+}
+
+#title-contacts{
+  color: black;
+}
+
+#fl-contacts{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 30px;
+}
+
+#tl-contacts{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
