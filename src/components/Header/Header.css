@@ -21,13 +21,31 @@ header {
   position: absolute;
   top: -1%;
   left: -1%;
+<<<<<<< HEAD
   width: 102%;
   height: 102%;
+=======
+<<<<<<< HEAD
+  width: 102%;
+  height: 102%;
+=======
+  width: 101%;
+  height: 101%;
+>>>>>>> 22927fe (git commit)
+>>>>>>> e2ea820 (git commit)
   background-image: url('/public/assets/background.png');
   background-size: cover;
   background-position: center;
   filter: blur(4px) grayscale(100%);
   z-index: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  clip-path: inset(1% 0% 0.1% 1%);
+  overflow-x: hidden;
+>>>>>>> 22927fe (git commit)
+>>>>>>> e2ea820 (git commit)
 }
 
 .content {
@@ -48,6 +66,13 @@ header {
   justify-content: center;
   padding: 25px;
   gap: 400px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  animation:  arriveeHaut 2s ease-in-out;
+>>>>>>> 22927fe (git commit)
+>>>>>>> e2ea820 (git commit)
 }
 
 .image{
@@ -133,6 +158,19 @@ select {
   gap: 30px;
   width: 30%;
   margin-bottom: -80px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  animation: arriveeGauche 2s ease-in-out;
+}
+
+.networks a{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+>>>>>>> 22927fe (git commit)
+>>>>>>> e2ea820 (git commit)
 }
 
 .networks img{
@@ -154,6 +192,7 @@ select {
   flex-direction: column;
   gap: 15px;
   width: 41%;
+  animation: agrandir 2s ease-in-out;
 }
 
 .title h1{
