@@ -3,16 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap');
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 html{
   cursor: url('../public/assets/curseur.png'), auto;
 }
 
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,14 +14,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
-  cursor: url('../public/assets/curseur.png') auto;
-=======
-<<<<<<< HEAD
-  cursor: url('../public/assets/curseur.png') auto;
-=======
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
 
 code {
@@ -226,39 +212,17 @@ body::-webkit-scrollbar-thumb:hover {
 a{
   text-decoration: none;
   color: white;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   cursor: url("../public/assets/hand.png"), default;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
 
 a:hover{
   color: #707070;
-<<<<<<< HEAD
-  cursor: url('../public/assets/hand.png') pointer;
-=======
-<<<<<<< HEAD
-  cursor: url('../public/assets/hand.png') pointer;
-=======
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
 
 /* BUTTON */
 
 button{
-<<<<<<< HEAD
-  cursor: url('../public/assets/hand.png') pointer;
-=======
-<<<<<<< HEAD
-  cursor: url('../public/assets/hand.png') pointer;
-=======
   cursor: url('../public/assets/hand.png'), default;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
 
 /* ANIMATIONS */
@@ -297,10 +261,6 @@ button{
   100%{
     transform: rotateY(360deg);
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 }
 
 /* ARRIVE PAR UN COTE*/
@@ -358,6 +318,4 @@ button{
   to {
     transform: scale(1); 
   }
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }

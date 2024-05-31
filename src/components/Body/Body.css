@@ -160,10 +160,6 @@ body, html {
   width: 50%;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 #item-skills img{
   transition: 2s;
 }
@@ -173,8 +169,6 @@ body, html {
   transition: 2s;
 }
 
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 .progress-bar{
   background-color: #6B6B6B;
 }
@@ -190,29 +184,13 @@ body, html {
 
 .projects{
     width: 100%;
-<<<<<<< HEAD
-    height: 175vh;
-=======
-<<<<<<< HEAD
-    height: 175vh;
-=======
     height: 190vh;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
     background-color: #D9D9D9;
 }
 
 .carousel-img {
-<<<<<<< HEAD
-  max-width: 100%;
-=======
-<<<<<<< HEAD
-  max-width: 100%;
-=======
   max-height: 40;
   max-width: 50%;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
   height: auto;
   display: block;
   margin-left: auto;
@@ -346,15 +324,7 @@ body, html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  gap: 500px;
-=======
-<<<<<<< HEAD
-  gap: 500px;
-=======
   gap: 300px;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
 
 .left-contacts{
@@ -363,17 +333,11 @@ body, html {
   gap: 100px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 .div-contacts{
   min-width: 500px;
   max-width: 550px;
 }
 
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 .bar-contacts{
   display: flex;
   flex-direction: row;
@@ -402,16 +366,10 @@ body, html {
   border-top: 5px solid black;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 #textarea-contacts{
   min-height: 300px;
 }
 
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 #title-contacts{
   color: black;
 }

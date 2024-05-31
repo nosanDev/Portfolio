@@ -4,24 +4,13 @@ import { Carousel, ProgressBar, Form } from 'react-bootstrap';
 import './Body.css';
 
 const Body  = () => {
-<<<<<<< HEAD
-    const image1 = process.env.PUBLIC_URL + '/assets/game.png';
-    const image2 = process.env.PUBLIC_URL + '/assets/game.png';
-    const image3 = process.env.PUBLIC_URL + '/assets/game.png';
-=======
-<<<<<<< HEAD
-    const image1 = process.env.PUBLIC_URL + '/assets/game.png';
-    const image2 = process.env.PUBLIC_URL + '/assets/game.png';
-    const image3 = process.env.PUBLIC_URL + '/assets/game.png';
-=======
+
     const image1 = process.env.PUBLIC_URL + '/assets/fift.png';
     const image2 = process.env.PUBLIC_URL + '/assets/speedgamemc.png';
     const image3 = process.env.PUBLIC_URL + '/assets/mathemapy.png';
     const image4 = process.env.PUBLIC_URL + '/assets/delphine-hypnose.png';
     const image5 = process.env.PUBLIC_URL + '/assets/game.png';
     const image6 = process.env.PUBLIC_URL + '/assets/game.png';
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 
     return (
         <body>
@@ -172,15 +161,9 @@ const Body  = () => {
                     <div className="carousel-container">
 
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
 
-=======
                         {/* CAROUSEL PROJECTS */}
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 
                         <Carousel data-bs-theme="dark">
                             <Carousel.Item>
@@ -218,29 +201,16 @@ const Body  = () => {
                             </Carousel.Item>
                         </Carousel>
 
-<<<<<<< HEAD
-                        {/* CAROUSEL PROJECTS */}
-=======
-<<<<<<< HEAD
-                        {/* CAROUSEL PROJECTS */}
-=======
+
+
                         {/* CAROUSEL COMMANDS */}
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
+
 
                         <Carousel data-bs-theme="dark">
                             <Carousel.Item>
                                 <img
                                 className="d-block carousel-img"
-<<<<<<< HEAD
-                                src={image1}
-=======
-<<<<<<< HEAD
-                                src={image1}
-=======
                                 src={image4}
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                 alt="First slide"
                                 />
                                 <Carousel.Caption>
@@ -251,15 +221,7 @@ const Body  = () => {
                             <Carousel.Item>
                                 <img
                                 className="d-block carousel-img"
-<<<<<<< HEAD
-                                src={image2}
-=======
-<<<<<<< HEAD
-                                src={image2}
-=======
                                 src={image5}
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                 alt="Second slide"
                                 />
                                 <Carousel.Caption>
@@ -270,15 +232,7 @@ const Body  = () => {
                             <Carousel.Item>
                                 <img
                                 className="d-block carousel-img"
-<<<<<<< HEAD
-                                src={image3}
-=======
-<<<<<<< HEAD
-                                src={image3}
-=======
                                 src={image6}
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                 alt="Third slide"
                                 />
                                 <Carousel.Caption>
@@ -317,15 +271,7 @@ const Body  = () => {
                     <div className='contacts-container'> 
                         {/* La partie de gauche */}
                         <div className='left-contacts'>
-<<<<<<< HEAD
-                            <div>
-=======
-<<<<<<< HEAD
-                            <div>
-=======
                             <div class='div-contacts'>
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                 <div id='fl-contacts'>
                                     <img src='/assets/user.png' alt='user'></img>
                                     <h2 id='title-contacts' className='inria-sans-regular'>Nom et prénom</h2>
@@ -340,16 +286,8 @@ const Body  = () => {
                                     <h6 id='tl-contacts' className='roboto-regular'>Veuillez renseignez ce champs*</h6>
                                 </div>
                             </div>
-                        
-<<<<<<< HEAD
-                            <div>
-=======
-<<<<<<< HEAD
-                            <div>
-=======
                             <div class='div-contacts'>
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
+
                                 <div id='fl-contacts'>
                                     <img src='/assets/email.png' alt='email'></img>
                                     <h2 id='title-contacts' className='inria-sans-regular'>Email</h2>
@@ -368,15 +306,7 @@ const Body  = () => {
                         </div>
                         {/* La partie de droite */}
                         <div>
-<<<<<<< HEAD
-                            <div>
-=======
-<<<<<<< HEAD
-                            <div>
-=======
                             <div class='div-contacts'>
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                 <div id='fl-contacts'>
                                     <img src='/assets/message.png' alt='message'></img>
                                     <h2 id='title-contacts' className='inria-sans-regular'>Message</h2>
@@ -384,15 +314,7 @@ const Body  = () => {
                                 <div>
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                         <Form.Label>Example textarea</Form.Label>
-<<<<<<< HEAD
-                                        <Form.Control as="textarea" rows={4} placeholder="Saisissez votre message*" />
-=======
-<<<<<<< HEAD
-                                        <Form.Control as="textarea" rows={4} placeholder="Saisissez votre message*" />
-=======
                                         <Form.Control id="textarea-contacts" as="textarea" rows={4} placeholder="Saisissez votre message*" />
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
                                     </Form.Group>
                                 </div>
                                 <div>

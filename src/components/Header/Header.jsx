@@ -59,21 +59,9 @@ const Header = () => {
         </div>
         <div className='header-element'>
           <div className='networks'>
-<<<<<<< HEAD
-            <img id='network' src="/assets/instagram.png" alt="Instagram" />
-            <img id='network' src="/assets/linkedin.png" alt="Linkedin" />
-            <img id='network' src="/assets/twitter.png" alt="Twitter" />
-=======
-<<<<<<< HEAD
-            <img id='network' src="/assets/instagram.png" alt="Instagram" />
-            <img id='network' src="/assets/linkedin.png" alt="Linkedin" />
-            <img id='network' src="/assets/twitter.png" alt="Twitter" />
-=======
             <a href='https://www.instagram.com/_webnono_/'><img id='network' src="/assets/instagram.png" alt="Instagram" /></a>
             <a href='https:/www.linkedin.com'><img id='network' src="/assets/linkedin.png" alt="Linkedin" /></a>
             <a href='https://www.twitter.com'><img id='network' src="/assets/twitter.png" alt="Twitter" /></a>
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
           </div>
           <div className='title'>
             <div>

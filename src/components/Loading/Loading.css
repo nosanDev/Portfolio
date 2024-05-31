@@ -42,10 +42,6 @@ body, html {
 
 /* BAR-VIDEO */
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e2ea820 (git commit)
 .bar-video{
     display: flex;
     align-items: center;
@@ -55,9 +51,8 @@ body, html {
 
 .bar-video video{
     max-width: 150%;
-<<<<<<< HEAD
-=======
-=======
+}
+
 .progress-bar-loading {
     display: flex;
     width: 40%;
@@ -77,6 +72,4 @@ body, html {
     line-height: 30px;
     color: white;
     transition: width 0.1s ease-in-out;
->>>>>>> 22927fe (git commit)
->>>>>>> e2ea820 (git commit)
 }
