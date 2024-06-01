@@ -1,9 +1,18 @@
 // src/components/Header/Header.jsx
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
 import './Header.css';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 const Header = () => {
+  // for Traduction
+
+  const { t } = useTranslation();
+
+  // for scrollIntoView
+
   const handleClickAboutMe = () => {
     const article = document.querySelector('.aboutme');
     if (article) {
@@ -38,21 +47,12 @@ const Header = () => {
           </div>
           <nav className='navbar'>
             <ul className="inter">
-              <li><a href='/'>Accueil</a></li>
-              <li><a href='#' onClick={handleClickAboutMe}>Qui suis-je ?</a></li>
-              <li><a href='#' onClick={handleClickSkills}>Compétences</a></li>
-              <li><a href='#' onClick={handleClickProjects}>Projets</a></li>
-              <li><a href='#' onClick={handleClickContacts}>Contacts</a></li>
-              <Dropdown>
-              <Dropdown.Toggle variant="first" id="dropdown-basic">
-                <span className="flag">FR</span>
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/fr">FR</Dropdown.Item>
-                <Dropdown.Item href="#/en">EN</Dropdown.Item>
-                <Dropdown.Item href="#/es">ES</Dropdown.Item>
-              </Dropdown.Menu>
-              </Dropdown>
+              <li><a href="/">{t('home')}</a></li>
+              <li><a href="#" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
+              <li><a href="#" onClick={handleClickSkills}>{t('skills')}</a></li>
+              <li><a href="#" onClick={handleClickProjects}>{t('projects')}</a></li>
+              <li><a href="#" onClick={handleClickContacts}>{t('contacts')}</a></li>
+              <LanguageSelector />
             </ul>
             
           </nav>
@@ -68,7 +68,7 @@ const Header = () => {
               <h1 className='inika-bold'>Webnono</h1>
             </div>
             <div>
-              <h2 className='inria-serif-light'>Développeur - Étudiant</h2>
+              <h2 className="inria-serif-light">{t('developer_student')}</h2>
             </div>
           </div>
           </div>

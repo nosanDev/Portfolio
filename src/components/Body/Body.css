@@ -366,6 +366,13 @@ body, html {
   border-top: 5px solid black;
 }
 
+#btn-contacts{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #textarea-contacts{
   min-height: 300px;
 }

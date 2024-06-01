@@ -1,11 +1,17 @@
 // src/pages/NotFound/NotFound.jsx
 import React from 'react';
-import './NotFound.css'
+import { useTranslation } from 'react-i18next';
 
+import './NotFound.css'
 import Footer from '../../components/Footer/Footer';
 import Header_2 from '../../components/Header_2/Header_2';
 
 const NotFound = () => {
+  
+  // for Traduction
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <Header_2 />
@@ -16,10 +22,10 @@ const NotFound = () => {
           </div>
           <div>
             <div>
-              <h2 className='inria-sans-bold'>Désolé, la page que vous recherchez n'existe pas ici</h2>
+              <h2 className='inria-sans-bold'>{t('not_found')}</h2>
             </div>
             <div>
-              <button className='btn-notfound'><a href='/'>CLIQUEZ ICI</a></button>
+              <button className='btn-black'><a href='/'>{t('click_here')}</a></button>
             </div>
           </div>
 

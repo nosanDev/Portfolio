@@ -1,14 +1,26 @@
 // src/components/Footer/Footer.jsx
+import { useTranslation } from 'react-i18next';
+
 import "./Footer.css";
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 const Footer = () => {
+
+    // for Traduction
+
+    const { t } = useTranslation();
+
     return (
         <footer>
             <div className="copyright">
-                <h3>© Copyright 2024 - webnono. Tous droits réservés.</h3>
+                <h3>{t('copyright')}</h3>
             </div>
             <div className="plan-footer">
-                <h2><a href="/plan">Plan du site</a> | <a href="/mentionslegales">Mentions légales</a> | <a href="/politiqueconf">Politique de confidentialité</a></h2>
+                <h2>
+                    <a href="/plan">{t('site_map')}</a> |&nbsp;
+                    <a href="/mentionslegales">{t('legal_mentions')}</a> |&nbsp;
+                    <a href="/politiqueconf">{t('privacy_policy')}</a>
+                </h2>            
             </div>
         </footer>
     )

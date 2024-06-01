@@ -96,7 +96,8 @@ html, body {
   
   .dropdown-toggle {
     color: white;
-    transition:  ease-in-out 1s
+    transition:  ease-in-out 1s;
+    z-index: 1001;
   }
   
   .dropdown-toggle:focus {

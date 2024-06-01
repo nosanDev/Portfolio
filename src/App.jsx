@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 import Home from './pages/Home/Home';
@@ -11,6 +12,10 @@ import PolitiqueConf from './pages/PolitiqueConf/PolitiqueConf';
 import Loading from './components/Loading/Loading';
 
 function App() {
+  // For Translation
+
+  const { t } = useTranslation();
+
   // For Loading Page
   const [isLoading, setIsLoading] = useState(true);
 
