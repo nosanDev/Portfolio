@@ -388,6 +388,22 @@ button{
   }
 }
 
+.animate-slide-in-left {
+  animation: arriveeGauche 1s forwards;
+}
+
+.animate-slide-in-right {
+  animation: arriveeDroite 1s forwards;
+}
+
+.animate-slide-in-top {
+  animation: arriveeHaut 1s forwards;
+}
+
+.animate-slide-in-bot {
+  animation: arriveeBas 1s forwards;
+}
+
 /* TAILLE */
 
 @keyframes agrandir {
@@ -397,4 +413,8 @@ button{
   to {
     transform: scale(1); 
   }
+}
+
+.animate-zoom-in{
+  animation: agrandir 1s forwards;
 }

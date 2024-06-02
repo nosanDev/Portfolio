@@ -20,7 +20,7 @@ header {
 .background {
   position: absolute;
   top: -1%;
-  left: -1%;
+  left: -2%;
   width: 102%;
   height: 102%;
   background-image: url('/public/assets/background.png');
