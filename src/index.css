@@ -413,7 +413,7 @@ button{
   to {
     transform: scale(1); 
   }
-}
+}   
 
 .animate-zoom-in{
   animation: agrandir 1s forwards;

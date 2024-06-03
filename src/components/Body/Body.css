@@ -126,6 +126,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
 }
 
 .skills-container{
@@ -142,6 +143,7 @@ body, html {
   height: 50%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 15px;
@@ -171,6 +173,8 @@ body, html {
 
 .progress-bar{
   background-color: #6B6B6B;
+  z-index: 5;
+  animation: arriveeGauche 1s;
 }
 
 #progress-bar{
@@ -178,6 +182,7 @@ body, html {
   height: 17px;
   min-width: 450px;
   max-width: 450px;
+  z-index: 9;
 }
 
 /* PROJECTS & COMMANDS */
@@ -315,7 +320,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 110vh;
+  min-height: 115vh;
 }
 
 .contacts-container{
@@ -367,7 +372,7 @@ body, html {
 }
 
 #btn-contacts{
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
