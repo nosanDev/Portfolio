@@ -29,7 +29,7 @@ const Body  = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        console.log('Form reference:', form.current); // Debugging
+        console.log('Form reference:', form.current); // Debug
 
         emailjs
             .sendForm(
@@ -42,6 +42,7 @@ const Body  = () => {
                 (result) => {
                     console.log('EmailJS result:', result.text);
                     console.log('Message sent successfully');
+                    alert('Votre message à été envoyé avec succès !');
                 },
                 (error) => {
                     console.log('EmailJS error:', error.text);
@@ -120,28 +121,52 @@ const Body  = () => {
                                 </div>
                             </AnimatedComponent>
                             <div id='items-skills'>
-                                <img src='/assets/logos/html.png' alt='html'></img>
-                                <ProgressBar now={85} id='progress-bar'/>
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/html.png' alt='html'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={85} id='progress-bar'/>
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/css.png' alt='css'></img>
-                                <ProgressBar now={70} id='progress-bar'/>
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/css.png' alt='css'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={70} id='progress-bar'/>
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/python.png' alt='python'></img>
-                                <ProgressBar now={70} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/python.png' alt='python'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={70} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/java.png' alt='java'></img>
-                                <ProgressBar now={60} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/java.png' alt='java'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={60} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/php.png' alt='php'></img>
-                                <ProgressBar now={60} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/php.png' alt='php'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={60} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/js.png' alt='js'></img>
-                                <ProgressBar now={75} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/js.png' alt='js'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={75} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                         </div>
                         <div className='skills-columns'>
@@ -151,12 +176,20 @@ const Body  = () => {
                                 </div>
                             </AnimatedComponent>
                             <div id='items-skills'>
-                                <img src='/assets/logos/windows.png' alt='windows'></img>
-                                <ProgressBar now={85} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/windows.png' alt='windows'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={85} id='progress-bar'/>
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/linux.png' alt='linux'></img>
-                                <ProgressBar now={65} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/linux.png' alt='linux'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={65} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                         </div>
                         <div className='skills-columns'>
@@ -166,24 +199,44 @@ const Body  = () => {
                                 </div>
                             </AnimatedComponent>
                             <div id='items-skills'>
-                                <img src='/assets/logos/node-js.png' alt='node-js'></img>
-                                <ProgressBar now={65} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/node-js.png' alt='node-js'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={65} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/react.png' alt='react'></img>
-                                <ProgressBar now={70} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/react.png' alt='react'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={70} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/mongo.png' alt='mongo'></img>
-                                <ProgressBar now={75} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/mongo.png' alt='mongo'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={75} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/boostrap.png' alt='boostrap'></img>
-                                <ProgressBar now={65} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/boostrap.png' alt='boostrap'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={65} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/git.png' alt='git'></img>
-                                <ProgressBar now={70} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/git.png' alt='git'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={70} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                         </div>
                         <div className='skills-columns'>
@@ -193,16 +246,28 @@ const Body  = () => {
                                 </div>
                             </AnimatedComponent>
                             <div id='items-skills'>
-                                <img src='/assets/logos/uk.png' alt='uk'></img>
-                                <ProgressBar now={65} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/uk.png' alt='uk'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={65} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/sp.png' alt='sp'></img>
-                                <ProgressBar now={50} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/sp.png' alt='sp'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={50} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                             <div id='items-skills'>
-                                <img src='/assets/logos/fr.png' alt='fr'></img>
-                                <ProgressBar now={95} id='progress-bar' />
+                                <AnimatedComponent animationClass="animate-slide-in-left">
+                                    <img src='/assets/logos/fr.png' alt='fr'></img>
+                                </AnimatedComponent>
+                                <AnimatedComponent animationClass="animate-slide-in-right">
+                                    <ProgressBar now={95} id='progress-bar' />
+                                </AnimatedComponent>
                             </div>
                         </div>
                     </div>
