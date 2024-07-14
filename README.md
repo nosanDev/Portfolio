@@ -22,6 +22,4 @@ ISC License
 
 # Note
 
-- Faire le curseur qui rétablie la couleur
-
 - responsive

@@ -86,7 +86,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: clamp(0.2rem, 1.5vw, 1.2rem);
   transition: ease-in-out 1s;
 }
 
@@ -96,6 +96,7 @@ nav ul li a:hover {
 }
 
 img {
+  min-width: 60px;
   max-width: 100px;
 }
 
@@ -122,6 +123,16 @@ select {
 
 .flag::after {
   border-width: 0;
+}
+
+.navbar .menu-burger{ 
+  max-width: 5%;
+  display: none;
+  z-index: 1999;
+}
+
+.mobile-menu{
+  margin-left: 100;
 }
 
 .header-element{
@@ -151,7 +162,7 @@ select {
 
 #network {
   transition: 1s;
-  max-width: 4%;
+  max-width: clamp(0.5em ,15% ,10%);
   margin-left: 40px;
 }
 

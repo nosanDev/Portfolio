@@ -301,10 +301,10 @@ const Body  = () => {
                                     src={image1}
                                     alt="First slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -312,10 +312,10 @@ const Body  = () => {
                                     src={image2}
                                     alt="Second slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -323,10 +323,10 @@ const Body  = () => {
                                     src={image3}
                                     alt="Third slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                             </Carousel>
                         </AnimatedComponent>
@@ -343,10 +343,10 @@ const Body  = () => {
                                     src={image4}
                                     alt="First slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -354,10 +354,10 @@ const Body  = () => {
                                     src={image5}
                                     alt="Second slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -365,10 +365,10 @@ const Body  = () => {
                                     src={image6}
                                     alt="Third slide"
                                     />
-                                    <Carousel.Caption>
+                                    {/* <Carousel.Caption>
                                     <h3></h3>
                                     <p></p>
-                                    </Carousel.Caption>
+                                    </Carousel.Caption> */}
                                 </Carousel.Item>
                             </Carousel>
                         </AnimatedComponent>

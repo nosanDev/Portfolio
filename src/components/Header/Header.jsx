@@ -1,6 +1,5 @@
 // src/components/Header/Header.jsx
-import React from 'react';
-import { Dropdown } from 'react-bootstrap';
+import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Header.css';
@@ -37,6 +36,23 @@ const Header = () => {
       article.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // for MenuBurger 
+
+  useEffect(() => {
+    const menuHamburger = document.querySelector(".menu-burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    const toggleMobileMenu = () => {
+      navLinks.classList.toggle('mobile-menu');
+    };
+
+    menuHamburger.addEventListener('click', toggleMobileMenu);
+    
+    return () => {
+      menuHamburger.removeEventListener('click', toggleMobileMenu);
+    };
+  }, []);
   return (
     <header>
       <div className="background"></div>
@@ -46,15 +62,17 @@ const Header = () => {
             <a href='/'><img src="/assets/pp.png" alt="logo_webnono" /></a>
           </div>
           <nav className='navbar'>
-            <ul className="inter">
-              <li><a href="/">{t('home')}</a></li>
-              <li><a href="#" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
-              <li><a href="#" onClick={handleClickSkills}>{t('skills')}</a></li>
-              <li><a href="#" onClick={handleClickProjects}>{t('projects')}</a></li>
-              <li><a href="#" onClick={handleClickContacts}>{t('contacts')}</a></li>
-              <LanguageSelector />
-            </ul>
-            
+            <div className='nav-links'>
+              <ul className="inter">
+                <li><a href="/">{t('home')}</a></li>
+                <li><a href="#about_me" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
+                <li><a href="#skills" onClick={handleClickSkills}>{t('skills')}</a></li>
+                <li><a href="#projects" onClick={handleClickProjects}>{t('projects')}</a></li>
+                <li><a href="#contacts" onClick={handleClickContacts}>{t('contacts')}</a></li>
+                <LanguageSelector />
+              </ul>
+            </div>
+            <img className='menu-burger' src='/assets/menu_burger.png' alt='menu-burger'></img>
           </nav>
         </div>
         <div className='header-element'>
@@ -71,7 +89,7 @@ const Header = () => {
               <h2 className="inria-serif-light">{t('developer_student')}</h2>
             </div>
           </div>
-          </div>
+        </div>
           <div>
             <img className='arrow' src="/assets/bot_arrow.png" alt="bot-arrow" onClick={handleClickAboutMe}/>
           </div>

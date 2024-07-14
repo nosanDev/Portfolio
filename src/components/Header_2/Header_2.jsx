@@ -1,9 +1,10 @@
 // src/components/Header_2/Header_2.jsx
 import React from 'react';
-import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import './Header_2.css';
+
+import '../Header/Header.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 const Header_2 = () => {
@@ -46,15 +47,17 @@ const Header_2 = () => {
             <a href='/'><img src="/assets/pp.png" alt="logo_webnono" /></a>
           </div>
           <nav className='navbar'>
-            <ul className="inter">
-              <li><a href="/">{t('home')}</a></li>
-              <li><a href="#" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
-              <li><a href="#" onClick={handleClickSkills}>{t('skills')}</a></li>
-              <li><a href="#" onClick={handleClickProjects}>{t('projects')}</a></li>
-              <li><a href="#" onClick={handleClickContacts}>{t('contacts')}</a></li>
-              <LanguageSelector />
-            </ul>
-            
+            <div className='nav-links'>
+              <ul className="inter">
+                <li><a href="/">{t('home')}</a></li>
+                <li><a href="#about_me" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
+                <li><a href="#skills" onClick={handleClickSkills}>{t('skills')}</a></li>
+                <li><a href="#projects" onClick={handleClickProjects}>{t('projects')}</a></li>
+                <li><a href="#contacts" onClick={handleClickContacts}>{t('contacts')}</a></li>
+                <LanguageSelector />
+              </ul>
+            </div>
+            <img className='menu-burger' src='/assets/menu_burger.png' alt='menu-burger'></img>
           </nav>
           </div>
         </div>
