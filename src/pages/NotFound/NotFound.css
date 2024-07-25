@@ -22,5 +22,6 @@ html, body {
 }
 
 .img-error img{
+    min-width: 20%;
     max-width: 24%;
 }

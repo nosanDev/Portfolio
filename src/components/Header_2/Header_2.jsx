@@ -1,5 +1,5 @@
 // src/components/Header_2/Header_2.jsx
-import React from 'react';
+import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Header_2.css';
@@ -38,6 +38,23 @@ const Header_2 = () => {
       article.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // for MenuBurger 
+
+  useEffect(() => {
+    const menuHamburger = document.querySelector(".menu-burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    const toggleMobileMenu = () => {
+      navLinks.classList.toggle('mobile-menu');
+    };
+
+    menuHamburger.addEventListener('click', toggleMobileMenu);
+    
+    return () => {
+      menuHamburger.removeEventListener('click', toggleMobileMenu);
+    };
+  }, []);
   return (
     <header className='header2'>
       <div className="background_2"></div>

@@ -154,10 +154,11 @@ select {
   display: flex;
   flex-direction: row;
   align-items: end;
+  max-width: 100px;
 }
 
 .networks img{
-  min-width: 12%;
+  min-width: 60%;
 }
 
 #network {

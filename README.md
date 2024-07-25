@@ -18,8 +18,3 @@ webnono
 ## Licence
 
 ISC License
-
-
-# Note
-
-- responsive
