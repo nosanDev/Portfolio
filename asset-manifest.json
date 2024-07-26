@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio.git/static/css/main.b0b43c9a.css",
+    "main.js": "/Portfolio.git/static/js/main.5c5781e5.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio.git/static/js/453.1407b060.chunk.js",
+    "static/media/background.png": "/Portfolio.git/static/media/background.76e1fb2b6bbbfd9156e9.png",
+    "static/media/loading_background.webp": "/Portfolio.git/static/media/loading_background.755a6de09bc38a13658d.webp",
+    "static/media/game.png": "/Portfolio.git/static/media/game.07ee5eb271baf57ecd47.png",
+    "static/media/coding.png": "/Portfolio.git/static/media/coding.ab5e13b4c8fe086a2e7a.png",
+    "index.html": "/Portfolio.git/index.html",
+    "static/media/getFetch.cjs": "/Portfolio.git/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.b0b43c9a.css.map": "/Portfolio.git/static/css/main.b0b43c9a.css.map",
+    "main.5c5781e5.js.map": "/Portfolio.git/static/js/main.5c5781e5.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio.git/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0b43c9a.css",
+    "static/js/main.5c5781e5.js"
+  ]
+}
