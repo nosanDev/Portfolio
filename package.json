@@ -1,8 +1,8 @@
 {
+  "homepage": "https://webnono8.github.io/react_deploy",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://webnono8.github.io/Portfolio.git",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
