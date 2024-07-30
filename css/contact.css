@@ -1,0 +1,91 @@
+/*---------- contact.css for Portfolio Webnono ----------*/
+ 
+/*-- Article Contact  --*/ 
+
+.article_contactme_contact {
+    position: absolute;
+    top: 12.5%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75%;
+    width: 70%;
+}
+
+/*TitleOfArticle*/
+
+#title_contactme_contact {
+    position: absolute;
+    top: -1%;
+    left: 20%;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+/*MAP*/
+
+#map_contactme_contact {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 45%; 
+    height: 55%;
+}
+
+/*--Form--*/
+
+/*Name*/
+
+#fullName {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+}
+
+/*Email*/
+
+#email_id {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+
+/*Subject*/
+
+#subject {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+}
+
+/*Message*/
+
+#message {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
+
+/*CheckBox*/
+
+#checkbox_contactme_contact {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+
+/*Button*/
+
+#button_contactme_contact {
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    
+}
+
+#button_contactme_contact:active {
+    position: absolute;
+    top: 64%;
+    left: 54.5%;
+    height: 7%;
+    width: 9%;
+}
