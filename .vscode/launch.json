@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://\"C:\\Program Files\\nodejs\\node.exe\"",
+            "request": "launch",
+            "url": "http://\"C:\\Program Files\\nodejs\\node.exe\""
+        }
+    ]
+}
