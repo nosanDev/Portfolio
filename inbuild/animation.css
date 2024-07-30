@@ -1,0 +1,62 @@
+/**********************************************************/
+/**********************************************************/
+/********************* animation.css **********************/
+/**********************************************************/
+/**********************************************************/
+
+/* ARRIVE-CÔTE */
+
+@keyframes arriveeHaut {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arriveeBas {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arriveeGauche {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arriveeDroite {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* TAILLE */
+
+@keyframes agrandir {
+  from {
+    transform: scale(0.9); 
+  }
+  to {
+    transform: scale(1); 
+  }
+}
