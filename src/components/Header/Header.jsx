@@ -59,7 +59,7 @@ const Header = () => {
       <div className="content">
         <div className="title-bar">
           <div className='image'>
-            <a href='/'><img src="/assets/pp.png" alt="logo_webnono" /></a>
+            <a href='/'><img src="/assets/pp.png" alt="logo_nosan" /></a>
           </div>
           <nav className='navbar'>
             <div className='nav-links'>
@@ -77,7 +77,7 @@ const Header = () => {
         </div>
         <div className='header-element'>
           <div className='networks'>
-            <a href='https://www.instagram.com/_webnono_/'><img id='network' src="/assets/instagram.png" alt="Instagram" /></a>
+            <a href='https://www.instagram.com/nosan.dev/'><img id='network' src="/assets/instagram.png" alt="Instagram" /></a>
             <a href='https:/www.linkedin.com'><img id='network' src="/assets/linkedin.png" alt="Linkedin" /></a>
             <a href='https://www.twitter.com'><img id='network' src="/assets/twitter.png" alt="Twitter" /></a>
           </div>
