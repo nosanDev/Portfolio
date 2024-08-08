@@ -84,7 +84,7 @@ const Header = () => {
           </div>
           <div className='title'>
             <div>
-              <h1 className='inika-bold'>Webnono</h1>
+              <h1 className='inika-bold'>Nosan</h1>
             </div>
             <div>
               <h2 className="inria-serif-light">{t('developer_student')}</h2>
