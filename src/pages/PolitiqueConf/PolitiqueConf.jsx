@@ -2,7 +2,7 @@
 import React from 'react';
 
 import './PolitiqueConf.css'
-import Header_2 from '../../components/Header_2/Header_2';
+import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 import Footer from '../../components/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 
@@ -14,7 +14,7 @@ const PolitiqueConf = () => {
 
   return (
     <div>
-      <Header_2 />
+      <HeaderTwo />
       <div className='politiquesconf-container'>
         <div id='title'>
           <h1 className='inika-bold'>{t('privacy_policy')}</h1>

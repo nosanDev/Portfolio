@@ -51,7 +51,7 @@ const Body  = () => {
     };
 
     return (
-        <body>
+        <div>
             <div className='contents'>
 
                 {/* -- ABOUTME -- */}
@@ -479,7 +479,7 @@ const Body  = () => {
                     </AnimatedComponent>
                 </div>
             </div>
-        </body>
+        </div>
     )
 };
 

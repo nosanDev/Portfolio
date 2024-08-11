@@ -2,12 +2,12 @@
 import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
-import './Header_2.css';
+import './HeaderTwo.css';
 
 import '../Header/Header.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
-const Header_2 = () => {
+const HeaderTwo = () => {
   // for Traduction
 
   const { t } = useTranslation();
@@ -82,4 +82,4 @@ const Header_2 = () => {
   );
 };
 
-export default Header_2;
+export default HeaderTwo;

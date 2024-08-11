@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import './NotFound.css'
 import Footer from '../../components/Footer/Footer';
-import Header_2 from '../../components/Header_2/Header_2';
+import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 
 const NotFound = () => {
   
@@ -14,7 +14,7 @@ const NotFound = () => {
 
   return (
     <div>
-      <Header_2 />
+      <HeaderTwo />
       <div className='notfound-container'>
         
           <div className='img-error'>

@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Plan.css'
-import Header_2 from '../../components/Header_2/Header_2';
+import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 import Footer from '../../components/Footer/Footer';
 
 const Plan = () => {
@@ -14,7 +14,7 @@ const Plan = () => {
 
   return (
     <div>
-      <Header_2 />
+      <HeaderTwo />
       <div className='plan-container'>
         <div id='title'>
           <h1 className='inika-bold'>{t('plan_title')}</h1>

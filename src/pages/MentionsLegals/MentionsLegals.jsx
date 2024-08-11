@@ -3,7 +3,7 @@ import React from 'react';
 import './MentionsLegals.css'
 import { useTranslation } from 'react-i18next';
 
-import Header_2 from '../../components/Header_2/Header_2';
+import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 import Footer from '../../components/Footer/Footer';
 
 const MentionsLegals = () => {
@@ -14,7 +14,7 @@ const MentionsLegals = () => {
 
   return (
     <div>
-      <Header_2 />
+      <HeaderTwo />
       <div className='mentionslegals-container'>
         <div id='title'>
           <h1 className='inika-bold'>{t('legal_mentions')}</h1>
