@@ -5,6 +5,13 @@ import { useTranslation } from 'react-i18next';
 import './Header.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
+import ppImage from '../../assets/pp.png';
+import menuBurger from '../../assets/menu_burger.png';
+import botArrow from "../../assets/bot_arrow.png";
+import imgInstagram from "../../assets/instagram.png";
+import imgLinkedin from "../../assets/linkedin.png";
+import imgTwitter from "../../assets/twitter.png";
+
 const Header = () => {
   
   // for Traduction
@@ -60,7 +67,7 @@ const Header = () => {
       <div className="content">
         <div className="title-bar">
           <div className='image'>
-            <a href='/'><img src="/assets/pp.png" alt="logo_nosan" /></a>
+            <a href='/'><img src={ppImage} alt="logo_nosan" /></a>
           </div>
           <nav className='navbar'>
             <div className='nav-links'>
@@ -73,14 +80,14 @@ const Header = () => {
                 <LanguageSelector />
               </ul>
             </div>
-            <img className='menu-burger' src='/assets/menu_burger.png' alt='menu-burger'></img>
+            <img className='menu-burger' src={menuBurger} alt='menu-burger'></img>
           </nav>
         </div>
         <div className='header-element'>
           <div className='networks'>
-            <a href='https://www.instagram.com/nosan.dev/'><img id='network' src="/assets/instagram.png" alt="Instagram" /></a>
-            <a href='https:/www.linkedin.com'><img id='network' src="/assets/linkedin.png" alt="Linkedin" /></a>
-            <a href='https://www.twitter.com'><img id='network' src="/assets/twitter.png" alt="Twitter" /></a>
+            <a href='https://www.instagram.com/nosan.dev/'><img id='network' src={imgInstagram} alt="Instagram" /></a>
+            <a href='https:/www.linkedin.com'><img id='network' src={imgLinkedin} alt="Linkedin" /></a>
+            <a href='https://www.twitter.com'><img id='network' src={imgTwitter} alt="Twitter" /></a>
           </div>
           <div className='title'>
             <div>
@@ -92,7 +99,7 @@ const Header = () => {
           </div>
         </div>
           <div>
-            <img className='arrow' src="/assets/bot_arrow.png" alt="bot-arrow" onClick={handleClickAboutMe}/>
+            <img className='arrow' src={botArrow} alt="bot-arrow" onClick={handleClickAboutMe}/>
           </div>
       </div>
     </header>

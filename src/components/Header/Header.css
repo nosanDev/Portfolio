@@ -23,7 +23,7 @@ header {
   left: -2%;
   width: 102%;
   height: 102%;
-  background-image: url('/public/assets/background.png');
+  background-image: url('/src/assets/background.png');
   background-size: cover;
   background-position: center;
   filter: blur(4px) grayscale(100%);

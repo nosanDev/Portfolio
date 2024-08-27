@@ -4,7 +4,7 @@
 
 
 html{
-  cursor: url('../public/assets/curseur.png'), auto;
+  cursor: url('./assets/curseur.png'), auto;
 }
 
 body {
@@ -212,7 +212,7 @@ body::-webkit-scrollbar-thumb:hover {
 a{
   text-decoration: none;
   color: white;
-  cursor: url("../public/assets/hand.png"), default;
+  cursor: url("./assets/hand.png"), default;
 }
 
 a:hover{
@@ -222,7 +222,7 @@ a:hover{
 /* BUTTON */
 
 button{
-  cursor: url('../public/assets/hand.png'), default;
+  cursor: url('./assets/hand.png'), default;
 }
 
 .btn-black {
