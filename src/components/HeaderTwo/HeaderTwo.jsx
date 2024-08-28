@@ -7,6 +7,8 @@ import './HeaderTwo.css';
 import '../Header/Header.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
+import ppImage from '../../assets/pp.png';
+
 const HeaderTwo = () => {
   // for Traduction
 
@@ -61,7 +63,7 @@ const HeaderTwo = () => {
       <div className="content">
         <div className="title-bar">
           <div className='image'>
-            <a href='/'><img src="/assets/pp.png" alt="logo_webnono" /></a>
+            <a href='/'><img src={ppImage} alt="logo_webnono" /></a>
           </div>
           <nav className='navbar'>
             <div className='nav-links'>

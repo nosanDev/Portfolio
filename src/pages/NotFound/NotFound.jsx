@@ -6,6 +6,8 @@ import './NotFound.css'
 import Footer from '../../components/Footer/Footer';
 import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 
+import imgError from '../../assets/error.svg';
+
 const NotFound = () => {
   
   // for Traduction
@@ -18,7 +20,7 @@ const NotFound = () => {
       <div className='notfound-container'>
         
           <div className='img-error'>
-            <img src='/assets/error.svg' alt='404'></img>
+            <img src={imgError} alt='404'></img>
           </div>
           <div>
             <div>
