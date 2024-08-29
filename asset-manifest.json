@@ -1,26 +1,32 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.b0ee7cdc.css",
-    "main.js": "/Portfolio/static/js/main.aeef0da8.js",
+    "main.js": "/Portfolio/static/js/main.de18cf58.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/background.png": "/Portfolio/static/media/background.76e1fb2b6bbbfd9156e9.png",
+    "static/media/me.png": "/Portfolio/static/media/me.70d0a50a19d10a392905.png",
     "static/media/loading_background.webp": "/Portfolio/static/media/loading_background.755a6de09bc38a13658d.webp",
+    "static/media/delphine-hypnose.png": "/Portfolio/static/media/delphine-hypnose.bc39e0ea6c44f329035e.png",
+    "static/media/speedgamemc.png": "/Portfolio/static/media/speedgamemc.7df735c9922793abaa5d.png",
     "static/media/game.png": "/Portfolio/static/media/game.07ee5eb271baf57ecd47.png",
     "static/media/coding.png": "/Portfolio/static/media/coding.ab5e13b4c8fe086a2e7a.png",
+    "static/media/mathemapy.png": "/Portfolio/static/media/mathemapy.c779f539ffe577743b78.png",
+    "static/media/fift.png": "/Portfolio/static/media/fift.6a71d801f059fd64bd46.png",
     "static/media/pp.png": "/Portfolio/static/media/pp.5d17fb699d22db32fd6a.png",
     "static/media/instagram.png": "/Portfolio/static/media/instagram.1e609e1dc29371099d67.png",
     "static/media/twitter.png": "/Portfolio/static/media/twitter.f88d3a1ecfdbd45438f8.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.ab5b60af90372e200355.png",
+    "static/media/timeline.png": "/Portfolio/static/media/timeline.86168f46bae5d1e42c78.png",
     "static/media/error.svg": "/Portfolio/static/media/error.d010c03c058a2840a8608a9730e1c69d.svg",
     "static/media/bot_arrow.png": "/Portfolio/static/media/bot_arrow.20362b6b77e67a3354e3.png",
     "index.html": "/Portfolio/index.html",
     "static/media/getFetch.cjs": "/Portfolio/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.b0ee7cdc.css.map": "/Portfolio/static/css/main.b0ee7cdc.css.map",
-    "main.aeef0da8.js.map": "/Portfolio/static/js/main.aeef0da8.js.map",
+    "main.de18cf58.js.map": "/Portfolio/static/js/main.de18cf58.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0ee7cdc.css",
-    "static/js/main.aeef0da8.js"
+    "static/js/main.de18cf58.js"
   ]
 }
