@@ -3,6 +3,9 @@ import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+// Obtenez le contexte de base de votre application (utile pour GitHub Pages)
+const basePath = process.env.PUBLIC_URL || '';
+
 i18n
   .use(HttpApi)
   .use(LanguageDetector)
@@ -15,7 +18,7 @@ i18n
       caches: ['cookie'],
     },
     backend: {
-      loadPath: `src/locales/{{lng}}/translation.json`,
+      loadPath: `${basePath}/locales/{{lng}}/translation.json`,
     },
     react: {
       useSuspense: false,

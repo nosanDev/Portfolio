@@ -8,6 +8,7 @@ import '../Header/Header.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 import ppImage from '../../assets/pp.png';
+import menuBurger from "../../assets/menu_burger.png";
 
 const HeaderTwo = () => {
   // for Traduction
@@ -69,14 +70,14 @@ const HeaderTwo = () => {
             <div className='nav-links'>
               <ul className="inter">
                 <li><a href="/">{t('home')}</a></li>
-                <li><a href="#about_me" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
-                <li><a href="#skills" onClick={handleClickSkills}>{t('skills')}</a></li>
-                <li><a href="#projects" onClick={handleClickProjects}>{t('projects')}</a></li>
-                <li><a href="#contacts" onClick={handleClickContacts}>{t('contacts')}</a></li>
+                <li><a href="/#about_me" onClick={handleClickAboutMe}>{t('about_me')}</a></li>
+                <li><a href="/#skills" onClick={handleClickSkills}>{t('skills')}</a></li>
+                <li><a href="/#projects" onClick={handleClickProjects}>{t('projects')}</a></li>
+                <li><a href="/#contacts" onClick={handleClickContacts}>{t('contacts')}</a></li>
                 <LanguageSelector />
               </ul>
             </div>
-            <img className='menu-burger' src='/assets/menu_burger.png' alt='menu-burger'></img>
+            <img className='menu-burger' src={menuBurger} alt='menu-burger'></img>
           </nav>
           </div>
         </div>

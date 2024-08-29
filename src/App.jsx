@@ -1,7 +1,6 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 
 import Home from './pages/Home/Home';
@@ -12,9 +11,8 @@ import PolitiqueConf from './pages/PolitiqueConf/PolitiqueConf';
 import Loading from './components/Loading/Loading';
 
 function App() {
-  // For Translation
 
-  const { t } = useTranslation();
+  const basePath = "/"; // Mettre en /Portfolio pour que cela charge bien le basePath sur git pages
 
   // For Loading Page
   const [isLoading, setIsLoading] = useState(true);
@@ -32,13 +30,13 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={basePath}>
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path='/plan' element={<Plan/>} />
-          <Route path="/mentionslegales" element={<MentionsLegals/>} />
-          <Route path="/politiqueconf" element={<PolitiqueConf/>} />
-          <Route path="*" element={<NotFound/>} /> {/* Route 404 */}
+          <Route path="/" element={<Home />} />
+          <Route path='/plan' element={<Plan />} />
+          <Route path="/mentionslegales" element={<MentionsLegals />} />
+          <Route path="/politiqueconf" element={<PolitiqueConf />} />
+          <Route path="*" element={<NotFound />} /> {/* Route 404 */}
         </Routes>
       </Router>
     </div>

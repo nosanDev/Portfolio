@@ -1,11 +1,49 @@
 // src/components/Body/Body.jsx
-import React, { useRef } from 'react';
-import { Carousel, ProgressBar, Form } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Modal, Carousel, ProgressBar, Form, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 
 import './Body.css';
 import AnimatedComponent from '../AnimatedComponent/AnimatedComponent';
+
+// import pictures
+
+import Me from '../../assets/me.png';
+
+import Timeline from '../../assets/timeline.png';
+
+import Phtml from '../../assets/logos/html.png';
+import Pcss from '../../assets/logos/css.png';
+import Ppython from '../../assets/logos/python.png';
+import Pjava from '../../assets/logos/java.png';
+import Pphp from '../../assets/logos/php.png';
+import Pjs from '../../assets/logos/js.png';
+
+import Pwindows from '../../assets/logos/windows.png';
+import Plinux from '../../assets/logos/linux.png';
+
+import Pnodejs from '../../assets/logos/node-js.png';
+import Preact from '../../assets/logos/react.png';
+import Pmongo from '../../assets/logos/mongo.png';
+import Pboostrap from '../../assets/logos/boostrap.png';
+import Pgit from '../../assets/logos/git.png';
+
+import Puk from '../../assets/logos/uk.png';
+import Psp from '../../assets/logos/sp.png';
+import Pfr from '../../assets/logos/fr.png';
+
+import image1 from '../../assets/fift.png';
+import image2 from '../../assets/mathemapy.png';
+import image3 from '../../assets/speedgamemc.png';
+import image4 from '../../assets/game.png';
+import image1_2 from '../../assets/delphine-hypnose.png';
+import image2_2 from '../../assets/game.png';
+import image3_2 from '../../assets/game.png';
+
+import Puser from '../../assets/user.png';
+import Pemail from '../../assets/email.png';
+import Pmessage from '../../assets/message.png';
 
 const Body  = () => {
 
@@ -13,14 +51,12 @@ const Body  = () => {
 
     const { t } = useTranslation();
 
-    // for Images
+    // for Modals 
 
-    const image1 = process.env.PUBLIC_URL + '/assets/fift.png';
-    const image2 = process.env.PUBLIC_URL + '/assets/speedgamemc.png';
-    const image3 = process.env.PUBLIC_URL + '/assets/mathemapy.png';
-    const image4 = process.env.PUBLIC_URL + '/assets/delphine-hypnose.png';
-    const image5 = process.env.PUBLIC_URL + '/assets/game.png';
-    const image6 = process.env.PUBLIC_URL + '/assets/game.png';
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     // for Messages
 
@@ -65,7 +101,7 @@ const Body  = () => {
                     <div className='container'>
                         <div className='photo'>
                             <AnimatedComponent animationClass="animate-slide-in-left">
-                                <img src='/assets/me.png' alt='me'></img>
+                                <img src={Me} alt='me'></img>
                             </AnimatedComponent>
                         </div>
                         <div id='text' className='inika-regular'>
@@ -93,7 +129,7 @@ const Body  = () => {
                     </AnimatedComponent>
                     <AnimatedComponent animationClass="animate-zoom-in">
                         <div id='timeline-path'>
-                            <img src='/assets/timeline.png' alt='timeline'></img>
+                            <img src={Timeline} alt='timeline'></img>
                         </div>
                     </AnimatedComponent>
                 </div>
@@ -122,7 +158,7 @@ const Body  = () => {
                             </AnimatedComponent>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/html.png' alt='html'></img>
+                                    <img src={Phtml} alt='html'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={85} id='progress-bar'/>
@@ -130,7 +166,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/css.png' alt='css'></img>
+                                    <img src={Pcss} alt='css'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={70} id='progress-bar'/>
@@ -138,7 +174,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/python.png' alt='python'></img>
+                                    <img src={Ppython} alt='python'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={70} id='progress-bar' />
@@ -146,7 +182,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/java.png' alt='java'></img>
+                                    <img src={Pjava} alt='java'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={60} id='progress-bar' />
@@ -154,7 +190,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/php.png' alt='php'></img>
+                                    <img src={Pphp} alt='php'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={60} id='progress-bar' />
@@ -162,7 +198,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/js.png' alt='js'></img>
+                                    <img src={Pjs} alt='js'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={75} id='progress-bar' />
@@ -177,7 +213,7 @@ const Body  = () => {
                             </AnimatedComponent>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/windows.png' alt='windows'></img>
+                                    <img src={Pwindows} alt='windows'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={85} id='progress-bar'/>
@@ -185,7 +221,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/linux.png' alt='linux'></img>
+                                    <img src={Plinux} alt='linux'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={65} id='progress-bar' />
@@ -200,7 +236,7 @@ const Body  = () => {
                             </AnimatedComponent>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/node-js.png' alt='node-js'></img>
+                                    <img src={Pnodejs} alt='node-js'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={65} id='progress-bar' />
@@ -208,7 +244,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/react.png' alt='react'></img>
+                                    <img src={Preact} alt='react'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={70} id='progress-bar' />
@@ -216,7 +252,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/mongo.png' alt='mongo'></img>
+                                    <img src={Pmongo} alt='mongo'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={75} id='progress-bar' />
@@ -224,7 +260,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/boostrap.png' alt='boostrap'></img>
+                                    <img src={Pboostrap} alt='boostrap'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={65} id='progress-bar' />
@@ -232,7 +268,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/git.png' alt='git'></img>
+                                    <img src={Pgit} alt='git'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={70} id='progress-bar' />
@@ -247,7 +283,7 @@ const Body  = () => {
                             </AnimatedComponent>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/uk.png' alt='uk'></img>
+                                    <img src={Puk} alt='uk'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={65} id='progress-bar' />
@@ -255,7 +291,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/sp.png' alt='sp'></img>
+                                    <img src={Psp} alt='sp'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={50} id='progress-bar' />
@@ -263,7 +299,7 @@ const Body  = () => {
                             </div>
                             <div id='items-skills'>
                                 <AnimatedComponent animationClass="animate-slide-in-left">
-                                    <img src='/assets/logos/fr.png' alt='fr'></img>
+                                    <img src={Pfr} alt='fr'></img>
                                 </AnimatedComponent>
                                 <AnimatedComponent animationClass="animate-slide-in-right">
                                     <ProgressBar now={95} id='progress-bar' />
@@ -328,6 +364,37 @@ const Body  = () => {
                                     <p></p>
                                     </Carousel.Caption> */}
                                 </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block carousel-img"
+                                    src={image4}
+                                    alt="Fourth slide"
+                                    onClick={handleShow}
+                                    />
+                                    {/* <Carousel.Caption>
+                                    <h3></h3>
+                                    <p></p>
+                                    </Carousel.Caption> */}
+                                </Carousel.Item>
+
+                                <Modal show={show} onHide={handleClose}>
+                                    <Modal.Header closeButton>
+                                    <Modal.Title>Image Preview</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <img
+                                        src={image3_2}
+                                        alt="Modal Content"
+                                        style={{ width: '100%' }}
+                                    />
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                    <Button variant="secondary" onClick={handleClose}>
+                                        Close
+                                    </Button>
+                                    </Modal.Footer>
+                                </Modal>
+
                             </Carousel>
                         </AnimatedComponent>
 
@@ -340,7 +407,7 @@ const Body  = () => {
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
-                                    src={image4}
+                                    src={image1_2}
                                     alt="First slide"
                                     />
                                     {/* <Carousel.Caption>
@@ -351,7 +418,7 @@ const Body  = () => {
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
-                                    src={image5}
+                                    src={image2_2}
                                     alt="Second slide"
                                     />
                                     {/* <Carousel.Caption>
@@ -362,7 +429,7 @@ const Body  = () => {
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
-                                    src={image6}
+                                    src={image3_2}
                                     alt="Third slide"
                                     />
                                     {/* <Carousel.Caption>
@@ -419,7 +486,7 @@ const Body  = () => {
                             <div className='left-contacts'>
                                 <div className='div-contacts'>
                                     <div id='fl-contacts'>
-                                        <img src='/assets/user.png' alt='user'></img>
+                                        <img src={Puser} alt='user'></img>
                                         <h2 id='title-contacts' className='inria-sans-regular'>{t('name_surname')}</h2>
                                     </div>
                                     <div>
@@ -434,7 +501,7 @@ const Body  = () => {
                                 </div>
                                 <div className='div-contacts'>
                                     <div id='fl-contacts'>
-                                        <img src='/assets/email.png' alt='email'></img>
+                                        <img src={Pemail} alt='email'></img>
                                         <h2 id='title-contacts' className='inria-sans-regular'>{t('email')}</h2>
                                     </div>
                                     <div>
@@ -454,7 +521,7 @@ const Body  = () => {
                             <div className='right-contacts'>
                                 <div className='div-contacts'>
                                     <div id='fl-contacts'>
-                                        <img src='/assets/message.png' alt='message'></img>
+                                        <img src={Pmessage} alt='message'></img>
                                         <h2 id='title-contacts' className='inria-sans-regular'>{t('message')}</h2>
                                     </div>
                                     <div>
