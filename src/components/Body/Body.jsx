@@ -47,6 +47,36 @@ import Pmessage from '../../assets/message.png';
 
 const Body  = () => {
 
+    // for Modals
+
+    const [showNoInfoModal1, setShowNoInfoModal1] = useState(false);
+    const handleShowNoInfoModal1 = () => setShowNoInfoModal1(true);
+    const handleCloseNoInfoModal1 = () => setShowNoInfoModal1(false);
+
+    const [showNoInfoModal2, setShowNoInfoModal2] = useState(false);
+    const handleShowNoInfoModal2 = () => setShowNoInfoModal2(true);
+    const handleCloseNoInfoModal2 = () => setShowNoInfoModal2(false);
+
+    const [showNoInfoModal3, setShowNoInfoModal3] = useState(false);
+    const handleShowNoInfoModal3 = () => setShowNoInfoModal3(true);
+    const handleCloseNoInfoModal3 = () => setShowNoInfoModal3(false);
+
+    const [showNoInfoModal4, setShowNoInfoModal4] = useState(false);
+    const handleShowNoInfoModal4 = () => setShowNoInfoModal4(true);
+    const handleCloseNoInfoModal4 = () => setShowNoInfoModal4(false);
+
+    const [showNoInfoModal1_2, setShowNoInfoModal1_2] = useState(false);
+    const handleShowNoInfoModal1_2 = () => setShowNoInfoModal1_2(true);
+    const handleCloseNoInfoModal1_2 = () => setShowNoInfoModal1_2(false);
+
+    const [showNoInfoModal2_2, setShowNoInfoModal2_2] = useState(false);
+    const handleShowNoInfoModal2_2 = () => setShowNoInfoModal2_2(true);
+    const handleCloseNoInfoModal2_2 = () => setShowNoInfoModal2_2(false);
+
+    const [showNoInfoModal3_2, setShowNoInfoModal3_2] = useState(false);
+    const handleShowNoInfoModal3_2 = () => setShowNoInfoModal3_2(true);
+    const handleCloseNoInfoModal3_2 = () => setShowNoInfoModal3_2(false);
+
     // for Traduction
 
     const { t } = useTranslation();
@@ -336,65 +366,89 @@ const Body  = () => {
                                     className="d-block carousel-img"
                                     src={image1}
                                     alt="First slide"
+                                    onClick={handleShowNoInfoModal1}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal1} onHide={handleCloseNoInfoModal1} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title1')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text1')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal1}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image2}
                                     alt="Second slide"
+                                    onClick={handleShowNoInfoModal2}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal2} onHide={handleCloseNoInfoModal2} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title2')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text2')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal2}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image3}
                                     alt="Third slide"
+                                    onClick={handleShowNoInfoModal3}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal3} onHide={handleCloseNoInfoModal3} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title3')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text3')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal3}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image4}
-                                    alt="Fourth slide"
-                                    onClick={handleShow}
+                                    alt="Third slide"
+                                    onClick={handleShowNoInfoModal4}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal4} onHide={handleCloseNoInfoModal4} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title4')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text4')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal4}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
-
-                                <Modal show={show} onHide={handleClose}>
-                                    <Modal.Header closeButton>
-                                    <Modal.Title>Image Preview</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body>
-                                    <img
-                                        src={image3_2}
-                                        alt="Modal Content"
-                                        style={{ width: '100%' }}
-                                    />
-                                    </Modal.Body>
-                                    <Modal.Footer>
-                                    <Button variant="secondary" onClick={handleClose}>
-                                        Close
-                                    </Button>
-                                    </Modal.Footer>
-                                </Modal>
-
                             </Carousel>
                         </AnimatedComponent>
 
@@ -404,38 +458,71 @@ const Body  = () => {
 
                         <AnimatedComponent animationClass="animate-zoom-in">
                             <Carousel data-bs-theme="dark">
-                                <Carousel.Item>
+                            <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image1_2}
                                     alt="First slide"
+                                    onClick={handleShowNoInfoModal1_2}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal1_2} onHide={handleCloseNoInfoModal1_2} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title1_2')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text1_2')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal1_2}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image2_2}
                                     alt="Second slide"
+                                    onClick={handleShowNoInfoModal2_2}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal2_2} onHide={handleCloseNoInfoModal2_2} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title2_2')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text2_2')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal2_2}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                     className="d-block carousel-img"
                                     src={image3_2}
                                     alt="Third slide"
+                                    onClick={handleShowNoInfoModal3_2}
                                     />
-                                    {/* <Carousel.Caption>
-                                    <h3></h3>
-                                    <p></p>
-                                    </Carousel.Caption> */}
+                                    {/* Modale */}
+                                    <Modal show={showNoInfoModal3_2} onHide={handleCloseNoInfoModal3_2} backdrop={false}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>{t('mod_title3_2')}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            {t('mod_text3_2')}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <Button variant="secondary" onClick={handleCloseNoInfoModal3_2}>
+                                                Fermer
+                                            </Button>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </Carousel.Item>
                             </Carousel>
                         </AnimatedComponent>

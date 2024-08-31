@@ -1,11 +1,9 @@
 // src/components/LanguageSelector/LanguageSelector.jsx
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { Dropdown } from 'react-bootstrap';
 import i18n from '../../i18n';
 
 function LanguageSelector() {
-    const { t } = useTranslation();
 
     const handleSelect = (lang) => {
       i18n.changeLanguage(lang);
@@ -13,11 +11,6 @@ function LanguageSelector() {
     };
   
     const currentLanguage = i18n.language || 'FR';
-    const languages = {
-      EN: 'EN',
-      FR: 'FR',
-      ES: 'ES',
-    };
 
   return (
     <Dropdown onSelect={handleSelect}>
