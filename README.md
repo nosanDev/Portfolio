@@ -2,7 +2,7 @@
 
 Bienvenue sur mon portfolio ! Ce site présente mes projets, compétences et expériences professionnelles.
 
-![Logo de votre portfolio](public/assets/pp.png)
+![Logo de votre portfolio](src/assets/pp.png)
 
 ## Technologies Utilisées
 
