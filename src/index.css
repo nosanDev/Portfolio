@@ -419,6 +419,19 @@ button{
   animation: agrandir 1s forwards;
 }
 
+@keyframes rapticir {
+  from {
+    transform: scale(1); 
+  }
+  to {
+    transform: scale(0.9); 
+  }
+} 
+
+.animate-unzoom-in{
+  animation: rapticir 1s forwards;
+}
+
 /* RESONSIVE */
 
 /* 1190 */

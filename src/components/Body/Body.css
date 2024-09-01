@@ -116,6 +116,10 @@ body, html {
   min-width: 75%;
 }
 
+#timeline-path img:hover{
+  animation: rapticir 1s ease-in-out forwards;
+}
+
 /* SKILLS */
 
 .skills{
