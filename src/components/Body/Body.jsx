@@ -81,13 +81,6 @@ const Body  = () => {
 
     const { t } = useTranslation();
 
-    // for Modals 
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
     // for Messages
 
     const form = useRef();
@@ -375,6 +368,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text1')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://discord.gg/8XrD9V2bH4"><b>Discord</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal1}>
@@ -397,6 +392,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text2')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://github.com/nosanDev/Mathemapy"><b>GitHub</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal2}>
@@ -419,6 +416,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text3')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://discord.gg/2bJ8qjte5M"><b>Discord</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal3}>
@@ -441,6 +440,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text4')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://github.com/nosanDev"><b>GitHub</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal4}>
@@ -472,6 +473,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text1_2')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://delphine-sanchez-hypnose.fr"><b>WebSite</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal1_2}>
@@ -494,6 +497,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text2_2')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://github.com/nosanDev"><b>GitHub</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal2_2}>
@@ -516,6 +521,8 @@ const Body  = () => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             {t('mod_text3_2')}
+                                            <br></br>
+                                            <a id='modals-links' href="https://github.com/nosanDev"><b>GitHub</b></a>
                                         </Modal.Body>
                                         <Modal.Footer>
                                             <Button variant="secondary" onClick={handleCloseNoInfoModal3_2}>

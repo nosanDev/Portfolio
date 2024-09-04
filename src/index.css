@@ -434,9 +434,18 @@ button{
 
 /* RESONSIVE */
 
-/* 1190 */
 
-@media screen and (max-width : 1190px) {
+/* Smartphones jusqu'à 425px de large 
+
+Tablettes de 426px à 767px de large
+
+Ordinateurs portables de 768px jusqu’à 1388px de large
+
+Écrans de bureau supérieurs à 1388px de large */
+
+/* 1388px "écran de bureau" */
+
+@media screen and (max-width : 1388px) {
   header{
       display: flex; 
   }
@@ -524,98 +533,419 @@ button{
     min-width: 14%;
   }
 
-  /* OTHER */
+  /* Other */
 
-  .btn-black{
-    margin-bottom: 40px;
+  .projects{
+    max-height: 150vh;
   }
+}
+
+/* 768px and 1388px "ordinateurs portables" */
+
+@media screen and (min-width : 768px) and (max-width : 1388px) {
+
+  /* Other */
 
   #text{
     font-size: 0.8em;
   }
 
+  .skills{
+    min-height: 150vh;
+    max-height: 210vh;
+  }
+
   .projects{
-    height: 140vh !important;
+    min-height: 100vh;
+    max-height: 160vh;
   }
 
-  .mentionslegals-container{
-    height: 310vh !important;
+  #btn-contacts{
+    margin-bottom: 100px;
   }
-
-  .politiquesconf-container{
-    height: 340vh !important;
-  }
-  
 }
 
-/* 950 */
+/* Ajustement spécifique pour les écrans de 768px à 1080px */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .navbar .menu-burger{
+    margin-left: 75px;
+    min-width: 23%;
+  }
+  /* Other */
+  .path{
+    max-height: 30vh;
+  }
 
-@media screen and (max-width : 950px) {
+  .projects{
+    min-height: 100vh;
+    max-height: 125vh;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 900px à 1080px */
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+  .navbar .menu-burger{
+    margin-left: 150px;
+    min-width: 17%;
+  }
+}
+
+/* 426px and 767px "tablettes" */
+
+@media screen and (min-width : 426px) and (max-width : 767px) {
 
   .navbar .menu-burger{
-    display: block;
-    margin-right: 100px;
+    margin-left: 150px;
+    min-width: 20%;
+    max-width: 25%;
+  }
 
+  .navbar ul li a{
+    font-size: 0.7em;
+  }
+
+  .title-bar{
+    gap: 20px !important;
+  }
+
+  .image{
+    margin-right: 150px;
+  }
+
+  #title{
+    padding: 20px !important;
+  }
+
+  .copyright h3 {
+    font-size: 1.5em;
+  }
+
+  .plan-footer h2 {
+    font-size: 1.5em;
+  }
+  
+  /* Other */
+
+  #text {
+    display: flex!important; 
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center !important; 
+    font-size: 0.6em!important;
+    text-align: center !important;
+    height: 100%!important;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    flex-direction: column-reverse !important;
+    padding-top: 0px !important;
+    height: 100%!important;
+  }
+
+  .photo img {
+    max-width: 45% !important;
+    margin-bottom: 100px!important;
+  }
+
+  #text h5 {
+    max-width: 100%!important;
+    margin: 0!important;
+  }
+
+  .path{
+    max-height: 30vh;
+  }
+
+  #items-skills img{
+    max-width: 50px !important;
+  }
+
+  #progress-bar{
+    min-width: 250px !important;
+  }
+
+  .projects{
+    min-height: 60vh;
+    max-height: 130vh;
+  }
+
+  .carousel-img {
+    max-height: 40%;
+    max-width: 70% !important;
+  }
+
+  .div-contacts{
+    min-width: 300px !important;
+  }
+
+  .contacts-container{
+    gap: 100px !important;
+  }
+
+  #btn-contacts{
+    margin-bottom: 100px;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 560px à 710px */
+@media screen and (min-width: 560px) and (max-width: 710px) {
+  .navbar .menu-burger{
+    min-width: 35%;
+    margin-left: 20px;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 426px à 560px */
+@media screen and (min-width: 426px) and (max-width: 560px) {
+
+  .navbar .menu-burger{
+    min-width: 23%;
+    margin-left: 100px;
+  }
+
+  .navbar ul li a{
+    font-size: 0.7em;
+  }
+
+  .title-bar{
+    gap: 20px !important;
+  }
+
+  .image{
+    margin-right: 50px;
+  }
+
+  .header-element{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 40px;
+  }
+
+  .networks{
+    display: flex !important;
+    flex-direction: row !important;
+    padding-bottom: 90px;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+  }
+
+  .networks img{
+    min-width: 180% !important;
   }
 
   #network{
-    min-width: 50% !important;
+    margin-left: 0 !important;
   }
 
-  .title {
-    padding-bottom: 50px;
+  .title{
+    width: 100% !important;
+    gap: 0px !important;
   }
 
-  /* OTHER */
+  .arrow{
+    padding-top: 40px;
+    min-width: 10vh !important;
+    min-height: 5vh !important;
+  }
+
+  footer{
+    padding: 6px !important;
+  }
+
+  .copyright h3 {
+    font-size: 1.1em;
+  }
+
+  .plan-footer h2 {
+    font-size: 1em;
+  }
+
+  /* Other */
+
+  #timeline-path{
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+    align-items: center !important;
+  }
+
+  #timeline-path img{
+    min-width: 700px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 
   .projects{
-    height: 130vh !important;
+    min-height: 60vh;
+    max-height: 110vh;
   }
-
-  .mentionslegals-container{
-    height: 350vh !important;
-  }
-
-  .politiquesconf-container{
-    height: 350vh !important;
-  }
-
 }
 
-/* 700 */
+/* 425px "smartphone" */
 
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 425px) {
 
-  /* OTHER */
-
-  .mentionslegals-container{
-    height: 500vh !important;
-    padding: -150px 10px !important;
-  }
-
-  .politiquesconf-container{
-    height: 520vh !important;
-  }
-
-}
-
-/* 500 */
-
-@media screen and (max-width : 500px) {
   .navbar .menu-burger{
-    display: block;
-    margin-right: 50px;
-
+    min-width: 23%;
+    margin-left: 100px;
   }
 
-  /* OTHER */
-
-  .mentionslegals-container{
-    height: 680vh !important;
-    padding: -10px 0px !important;
+  .navbar ul li a{
+    font-size: 0.7em;
   }
 
-  .politiquesconf-container{
-    height: 570vh !important;
+  .title-bar{
+    gap: 20px !important;
+  }
+
+  .image img{
+    min-width: 22% !important;
+    max-width: 28% !important;
+  }
+
+  .header-element{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 40px;
+  }
+
+  .networks{
+    display: flex !important;
+    flex-direction: row !important;
+    padding-bottom: 90px;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .networks img{
+    min-width: 100% !important;
+  }
+
+  #network{
+    margin-left: 0 !important;
+  }
+
+  .title{
+    width: 100% !important;
+    gap: 0px !important;
+  }
+
+  .title h1{
+    font-size: 2.8em !important;
+  }
+
+  .title h2{
+    font-size: 1.3em !important;
+  }
+
+  .arrow{
+    padding-top: 40px;
+    min-width: 10vh !important;
+    min-height: 5vh !important;
+  }
+
+  footer{
+    padding: 6px !important;
+  }
+
+  .copyright h3 {
+    font-size: 1.1em;
+  }
+
+  .plan-footer h2 {
+    font-size: 1em;
+  }
+
+  #title{
+    padding: 10px !important;
+  }
+
+  #title h1{
+    font-size: 2em !important;
+  }
+
+  /* Other */
+
+  #text {
+    display: flex!important; 
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center !important; 
+    font-size: 0.6em!important;
+    text-align: center !important;
+    height: 100%!important;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    flex-direction: column-reverse !important;
+    padding-top: 0px !important;
+    height: 100%!important;
+  }
+
+  .photo img {
+    max-width: 45% !important;
+    margin-bottom: 100px!important;
+  }
+
+  #text h5 {
+    max-width: 100%!important;
+    margin: 0!important;
+  }
+
+  .path{
+    max-height: 29vh;
+  }
+
+  #timeline-path{
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+    align-items: center !important;
+  }
+
+  #timeline-path img{
+    min-width: 700px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .skills{
+    max-height : 175vh;
+  }
+  
+  #items-skills img{
+    min-width: 15px !important;
+    max-width: 50px !important;
+  }
+
+  #progress-bar{
+    min-width: 150px !important;
+    height: 13px !important;
+  }
+
+  .projects{
+    min-height: 50vh;
+    max-height: 90vh;
+  }
+
+  .carousel-img {
+    max-height: 40%;
+    max-width: 70% !important;
+  }
+  
+  .div-contacts{
+    min-width: 180px !important;
+  }
+
+  .contacts-container{
+    gap: 100px !important;
+  }
+
+  #btn-contacts{
+    margin-bottom: 100px;
   }
 }

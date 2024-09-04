@@ -113,7 +113,8 @@ body, html {
 }
 
 #timeline-path img{
-  min-width: 75%;
+  min-width: 85%;
+  max-width: 100%;
 }
 
 #timeline-path img:hover{
@@ -165,7 +166,7 @@ body, html {
   width: 50%;
 }
 
-#item-skills img{
+#items-skills img{
   transition: 2s;
 }
 
@@ -211,6 +212,13 @@ body, html {
   gap: 100px;
 }
 
+#modals-links {
+  color: grey;
+}
+
+#modals-links:hover{
+  color: rgb(26, 26, 26);
+}
 
 /* CV */
 
