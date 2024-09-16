@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.5e2059d1.css",
-    "main.js": "/Portfolio/static/js/main.d162323a.js",
+    "main.js": "/Portfolio/static/js/main.2538be3d.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/background.png": "/Portfolio/static/media/background.76e1fb2b6bbbfd9156e9.png",
     "static/media/me.png": "/Portfolio/static/media/me.70d0a50a19d10a392905.png",
     "static/media/loading_background.webp": "/Portfolio/static/media/loading_background.755a6de09bc38a13658d.webp",
     "static/media/delphine-hypnose.png": "/Portfolio/static/media/delphine-hypnose.bc39e0ea6c44f329035e.png",
     "static/media/speedgamemc.png": "/Portfolio/static/media/speedgamemc.7df735c9922793abaa5d.png",
+    "static/media/CV.pdf": "/Portfolio/static/media/CV.a896f6c30bdaebedb3c8.pdf",
     "static/media/game.png": "/Portfolio/static/media/game.07ee5eb271baf57ecd47.png",
     "static/media/coding.png": "/Portfolio/static/media/coding.ab5e13b4c8fe086a2e7a.png",
     "static/media/mathemapy.png": "/Portfolio/static/media/mathemapy.c779f539ffe577743b78.png",
@@ -22,11 +23,11 @@
     "index.html": "/Portfolio/index.html",
     "static/media/getFetch.cjs": "/Portfolio/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.5e2059d1.css.map": "/Portfolio/static/css/main.5e2059d1.css.map",
-    "main.d162323a.js.map": "/Portfolio/static/js/main.d162323a.js.map",
+    "main.2538be3d.js.map": "/Portfolio/static/js/main.2538be3d.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e2059d1.css",
-    "static/js/main.d162323a.js"
+    "static/js/main.2538be3d.js"
   ]
 }
