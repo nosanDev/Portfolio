@@ -385,6 +385,7 @@ body, html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 #textarea-contacts{

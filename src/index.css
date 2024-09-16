@@ -435,13 +435,23 @@ button{
 /* RESONSIVE */
 
 
-/* Smartphones jusqu'à 425px de large 
+/* -------------------- Width -------------------- */
+
+
+
+/* 
+
+Smartphones jusqu'à 425px de large 
 
 Tablettes de 426px à 767px de large
 
 Ordinateurs portables de 768px jusqu’à 1388px de large
 
-Écrans de bureau supérieurs à 1388px de large */
+Écrans de bureau supérieurs à 1388px de large 
+
+*/
+
+
 
 /* 1388px "écran de bureau" */
 
@@ -539,6 +549,7 @@ Ordinateurs portables de 768px jusqu’à 1388px de large
     max-height: 150vh;
   }
 }
+
 
 /* 768px and 1388px "ordinateurs portables" */
 
@@ -948,4 +959,203 @@ Ordinateurs portables de 768px jusqu’à 1388px de large
   #btn-contacts{
     margin-bottom: 100px;
   }
+}
+
+/* -------------------- Height -------------------- */
+
+/* 
+
+Smartphones avec une hauteur jusqu'à 700px
+
+Tablettes et petits ordinateurs portables avec une hauteur de 701px à 900px
+
+Ordinateurs portables avec une hauteur de 901px jusqu'à 1200px
+
+
+*/
+
+/* 701px and 900px "tablettes et petits ordinateurs portable" */
+
+@media screen and (min-height : 701px) and (max-height : 900px) {
+  
+  .header-element{
+    padding-top: 100px !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 40px;
+  }
+
+  .networks{
+    display: flex !important;
+    flex-direction: row !important;
+    padding-bottom: 90px;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .networks img{
+    min-width: 80% !important;
+  }
+
+  #network{
+    margin-left: 0 !important;
+  }
+
+  .title h1{
+    font-size: 3em !important;
+  }
+
+  .title h2{
+    font-size: 1.5em;
+  }
+
+  .arrow{
+    min-width: 20vh;
+    min-height: 10vh;
+    max-width: 20vh;
+    max-height: 10vh;
+    cursor: pointer;
+    animation: bounce ease-in-out 4s infinite;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 780px à 850px */
+
+@media screen and (min-height: 780px) and (max-height: 850px) {
+
+  .header-element{
+    padding-top: 100px !important;
+  }
+
+  .networks img{
+    min-width: 60% !important;
+  }
+
+  /* Other */
+
+  .skills{
+    min-height: 220vh !important;
+  }
+
+  #items-skills img{
+    max-width: 50px !important;
+  }
+
+  #progress-bar{
+    min-width: 250px !important;
+  }
+
+  .contacts-container{
+    gap: 100px !important;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 701px à 780px */
+
+@media screen and (min-height: 701px) and (max-height: 780px) {
+
+  .header-element{
+    padding-top: 70px !important;
+  }
+
+  .networks img{
+    min-width: 50% !important;
+  }
+
+  /* Other */
+
+  .skills{
+    min-height: 245vh !important;
+  }
+
+  #items-skills img{
+    max-width: 40px !important;
+  }
+
+  #progress-bar{
+    min-width: 250px !important;
+  }
+
+  .projects{
+    min-height: 150vh !important;
+  }
+
+  .contacts-container{
+    gap: 100px !important;
+  }
+}
+
+/* 700px "smartphone" */
+
+@media screen and (max-height: 700px) {
+  .header-element{
+    padding-top: 50px !important;
+  }
+
+  .networks img{
+    min-width: 50% !important;
+  }
+
+  .arrow{
+    padding-bottom: 20px !important;
+  }
+
+  /* Other */
+
+  .skills{
+    min-height: 245vh !important;
+  }
+
+  #items-skills img{
+    max-width: 40px !important;
+  }
+
+  #progress-bar{
+    min-width: 250px !important;
+  }
+
+  .projects{
+    min-height: 150vh !important;
+  }
+
+  .contacts-container{
+    gap: 100px !important;
+  }
+}
+
+/* Ajustement spécifique pour les écrans de 600px à 700px */
+
+@media screen and (min-height: 600px) and (max-height: 700px) {
+
+  .networks{
+    padding-bottom: 70px;
+  }
+
+  .networks img{
+    min-width: 90% !important;
+  }
+
+  .arrow{
+    padding-top: 20px;
+    min-width: 10vh !important;
+    min-height: 5vh !important;
+  }
+  
+  /* Other */
+
+  
+  .path{
+    max-height: 35vh;
+  }
+
+  .skills{
+    min-height: 220vh !important;
+  }
+
+  .projects{
+    min-height: 120vh !important;
+  }
+  
 }

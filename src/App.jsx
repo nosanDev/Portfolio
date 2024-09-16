@@ -12,7 +12,7 @@ import Loading from './components/Loading/Loading';
 
 function App() {
 
-  const basePath = "/Portfolio"; // Mettre en /Portfolio pour que cela charge bien le basePath sur git pages
+  const basePath = "/Portfolio";
 
   // For Loading Page
   const [isLoading, setIsLoading] = useState(true);

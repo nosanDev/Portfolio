@@ -1,2 +1,3 @@
 - niveau height
-rienfait
+check toutes les dimensions faire attention aux error
+=> si jamais error enlever tous ce qui concerne le responsive height
