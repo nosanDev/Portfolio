@@ -41,6 +41,8 @@ import image1_2 from '../../assets/delphine-hypnose.png';
 import image2_2 from '../../assets/game.png';
 import image3_2 from '../../assets/game.png';
 
+import CVPath from '../../assets/CV.pdf';
+
 import Puser from '../../assets/user.png';
 import Pemail from '../../assets/email.png';
 import Pmessage from '../../assets/message.png';
@@ -547,7 +549,7 @@ const Body  = () => {
                     <AnimatedComponent animationClass="animate-slide-in-bot">
                         <div>
                             <button className='btn-cv'>
-                                <a href='/assets/CV.pdf' download={"/assets/CV.pdf"}>
+                                <a href={CVPath} download={CVPath}>
                                     {t('click_here')}
                                 </a>
                             </button>
